@@ -1,4 +1,12 @@
 (function () {
+  const bubbleCssHref = '/css/style-bubbles.css';
+  if (!document.querySelector(`link[href="${bubbleCssHref}"]`)) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = bubbleCssHref;
+    document.head.appendChild(link);
+  }
+
   const navShell = document.querySelector('.nav');
   const nav = document.querySelector('nav.menu');
   const brand = document.querySelector('.brand');
@@ -28,7 +36,7 @@
       `<a href="${item.href}"${isCurrent(item.match) ? ' aria-current="page"' : ''}>${item.label}</a>`
     ).join('');
 
-    if (navShell) {
+    if (navShell && !navShell.querySelector('.menu-toggle')) {
       const toggle = document.createElement('button');
       toggle.className = 'menu-toggle';
       toggle.type = 'button';
