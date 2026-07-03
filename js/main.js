@@ -14,7 +14,7 @@
       { href: '/priorities.html', label: 'Platform', match: ['/priorities.html'] },
       { href: '/echo-wall.html', label: 'Your Voice', match: ['/echo-wall.html'] },
       { href: '/tour/index.html', label: 'Tour & Events', match: ['/tour/','/events.html'] },
-      { href: '/media.html', label: 'Media', match: ['/media.html'] },
+      { href: '/media.html', label: 'Speech & Media', match: ['/media.html','/speech.html'] },
       { href: '/resources.html', label: 'Resources', match: ['/resources.html','/mental-health.html','/education/','/support-team.html'] },
       { href: '/volunteer.html', label: 'Volunteer', match: ['/volunteer.html'] },
       { href: '/contact.html', label: 'Contact', match: ['/contact.html'] }
