@@ -1,0 +1,115 @@
+/* Rich campaign bubble layer — public campaign site only */
+.hero-deep{
+  background:
+    radial-gradient(circle at 74% 18%, rgba(215,173,74,.28), transparent 18rem),
+    radial-gradient(circle at 10% 88%, rgba(159,29,44,.16), transparent 24rem),
+    linear-gradient(135deg, rgba(255,249,232,.92), rgba(226,199,144,.62));
+}
+.hero-deep .campaign-copy{
+  padding:28px;
+  border:1px solid rgba(60,38,19,.22);
+  border-radius:28px;
+  background:rgba(255,250,240,.48);
+  box-shadow:0 22px 55px rgba(45,27,15,.14), inset 0 0 0 1px rgba(255,255,255,.35);
+}
+.portrait-ready{
+  border-radius:34px;
+  overflow:hidden;
+  background:
+    linear-gradient(180deg, rgba(7,26,49,.76), rgba(7,26,49,.92)),
+    url('/assets/images/homepage-portrait.jpg') center/cover no-repeat;
+}
+.portrait-ready:has(img){background:var(--navy)}
+.quick-bubble-section{
+  background:
+    linear-gradient(180deg, rgba(255,250,240,.54), rgba(255,255,255,.22)),
+    radial-gradient(circle at 24% 15%, rgba(215,173,74,.24), transparent 18rem);
+}
+.bubble-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:16px;
+  margin-top:24px;
+}
+.primary-bubbles{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.bubble{
+  position:relative;
+  min-height:92px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:6px;
+  padding:18px 20px;
+  color:var(--navy);
+  text-decoration:none;
+  font-weight:900;
+  text-align:center;
+  border:2px solid rgba(60,38,19,.3);
+  border-radius:999px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.78), rgba(239,226,197,.86)),
+    radial-gradient(circle at 30% 18%, rgba(255,255,255,.78), transparent 42%);
+  box-shadow:
+    0 14px 28px rgba(45,27,15,.16),
+    inset 0 2px 0 rgba(255,255,255,.72),
+    inset 0 -8px 18px rgba(107,75,40,.10);
+  transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.bubble:before{
+  content:"";
+  position:absolute;
+  left:18%;
+  top:14%;
+  width:28%;
+  height:18%;
+  border-radius:999px;
+  background:rgba(255,255,255,.45);
+  filter:blur(1px);
+}
+.bubble strong{font-size:1.05rem;text-transform:uppercase;letter-spacing:.04em;position:relative;z-index:1}
+.bubble span{font-size:.86rem;line-height:1.25;color:rgba(7,26,49,.82);position:relative;z-index:1}
+.bubble:hover{
+  transform:translateY(-4px) scale(1.015);
+  box-shadow:0 22px 42px rgba(45,27,15,.22), inset 0 2px 0 rgba(255,255,255,.82);
+  filter:brightness(1.03);
+}
+.bubble.red{background:linear-gradient(145deg, #b83042, #7d1422);color:#fffdf7;border-color:#f0c45a}
+.bubble.blue{background:linear-gradient(145deg, #1a497a, #071a31);color:#fffdf7;border-color:#d7ad4a}
+.bubble.green{background:linear-gradient(145deg, #177243, #0f3f25);color:#fffdf7;border-color:#d7ad4a}
+.bubble.gold{background:linear-gradient(145deg, #ffe09a, #d7ad4a);color:#071a31;border-color:#6b4b28}
+.bubble.red span,.bubble.blue span,.bubble.green span{color:#fff2c4}
+.directory-bubbles .bubble{
+  min-height:72px;
+  padding:14px 18px;
+  font-size:.96rem;
+}
+.bubble-card{
+  border-radius:26px;
+  overflow:hidden;
+  box-shadow:
+    0 18px 38px rgba(45,27,15,.16),
+    inset 0 1px 0 rgba(255,255,255,.6);
+}
+.bubble-card:before{
+  content:"";
+  display:block;
+  position:absolute;
+}
+.card.bubble-card,.priority-card.bubble-card{
+  border-radius:26px;
+  border-top-width:7px;
+}
+.section-cream .bubble-grid{
+  padding:18px;
+  border:3px double rgba(107,75,40,.42);
+  border-radius:34px;
+  background:rgba(255,250,240,.38);
+}
+@media(max-width:760px){
+  .hero-deep .campaign-copy{padding:20px;border-radius:22px}
+  .bubble-grid,.primary-bubbles{grid-template-columns:1fr 1fr;gap:12px}
+  .bubble{min-height:76px;padding:14px 12px;font-size:.88rem}
+  .bubble strong{font-size:.88rem}
+  .bubble span{font-size:.74rem}
+}
+@media(max-width:460px){.bubble-grid,.primary-bubbles{grid-template-columns:1fr}}
