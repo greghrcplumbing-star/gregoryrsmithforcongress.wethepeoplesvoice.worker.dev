@@ -18,8 +18,11 @@
   if (nav) {
     const items = [
       { href: '/index.html', label: 'Home', match: ['/', '/index.html'] },
-      { href: '/about.html', label: 'Meet Gregory', match: ['/about.html'] },
+      { href: '/about.html', label: 'Meet Greg', match: ['/about.html'] },
       { href: '/priorities.html', label: 'Issues', match: ['/priorities.html', '/issues.html'] },
+      { href: '/people-vote.html', label: 'People Vote', match: ['/people-vote.html'] },
+      { href: '/endorsement.html', label: 'Endorse', match: ['/endorsement.html'] },
+      { href: '/contribution.html', label: 'Contribute', match: ['/contribution.html'] },
       { href: '/speech.html', label: 'Speech', match: ['/speech.html'] },
       { href: '/media.html', label: 'Media', match: ['/media.html'] },
       { href: '/tour/index.html', label: 'Events', match: ['/tour/', '/events.html'] },
