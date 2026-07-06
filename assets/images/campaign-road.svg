@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Campaign road artwork</title>
+  <desc id="desc">A campaign road illustration showing the movement beginning in the middle of the country.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#061525"/><stop offset=".55" stop-color="#0b3775"/><stop offset="1" stop-color="#d7ad4a"/></linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <path d="M0 535 C170 450 320 480 470 525 C630 575 800 520 1200 440 L1200 800 L0 800 Z" fill="#f7e6bf" opacity=".92"/>
+  <path d="M510 800 L690 800 L635 525 L565 525 Z" fill="#061525"/>
+  <path d="M600 800 L600 525" stroke="#ffe4a2" stroke-width="10" stroke-dasharray="38 35"/>
+  <g fill="#fff8e7" opacity=".88">
+    <polygon points="170,145 182,180 220,180 189,202 201,238 170,216 139,238 151,202 120,180 158,180"/>
+    <polygon points="1010,105 1020,135 1052,135 1026,153 1036,184 1010,165 984,184 994,153 968,135 1000,135"/>
+    <polygon points="880,250 888,274 914,274 893,288 901,313 880,298 859,313 867,288 846,274 872,274"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="600" y="120" fill="#fff8e7" font-size="54" font-weight="900" letter-spacing="4">THE FIRST STOP</text>
+    <text x="600" y="188" fill="#ffe4a2" font-size="34" font-weight="900" letter-spacing="3">STARTING FROM THE MIDDLE OF THE COUNTRY</text>
+    <text x="600" y="735" fill="#061525" font-size="40" font-weight="900">Listen. Learn. Build.</text>
+  </g>
+</svg>
