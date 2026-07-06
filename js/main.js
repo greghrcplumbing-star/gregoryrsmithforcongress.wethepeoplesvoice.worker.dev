@@ -12,23 +12,19 @@
   const brand = document.querySelector('.brand');
 
   if (brand) {
-    brand.innerHTML = '<a href="/index.html" aria-label="Gregory R. Smith for Congress home"><span>Gregory R. Smith</span><small>For Congress · We The People Voice</small></a>';
+    brand.innerHTML = '<a href="/index.html" aria-label="Gregory R. Smith for Congress home"><span>Gregory R. Smith</span><small>For Congress · A Voice For The People</small></a>';
   }
 
   if (nav) {
     const items = [
       { href: '/index.html', label: 'Home', match: ['/', '/index.html'] },
-      { href: '/about.html', label: 'Meet Greg', match: ['/about.html'] },
-      { href: '/priorities.html', label: 'Issues', match: ['/priorities.html', '/issues.html'] },
-      { href: '/people-vote.html', label: 'People Vote', match: ['/people-vote.html'] },
-      { href: '/endorsement.html', label: 'Endorse', match: ['/endorsement.html'] },
-      { href: '/contribution.html', label: 'Contribute', match: ['/contribution.html'] },
-      { href: '/speech.html', label: 'Speech', match: ['/speech.html'] },
-      { href: '/media.html', label: 'Media', match: ['/media.html'] },
+      { href: '/about.html', label: 'About', match: ['/about.html'] },
+      { href: '/speech.html', label: 'Movement', match: ['/speech.html'] },
       { href: '/tour/index.html', label: 'Events', match: ['/tour/', '/events.html'] },
-      { href: '/resources.html', label: 'Resources', match: ['/resources.html', '/mental-health.html', '/education/', '/support-team.html'] },
-      { href: '/volunteer.html', label: 'Get Involved', match: ['/volunteer.html', '/get-involved.html'] },
-      { href: '/contact.html', label: 'Contact', match: ['/contact.html'] }
+      { href: '/tour/index.html', label: 'Tour', match: ['/tour/index.html'] },
+      { href: '/priorities.html', label: 'Issues', match: ['/priorities.html', '/issues.html'] },
+      { href: '/volunteer.html', label: 'Volunteer', match: ['/volunteer.html', '/get-involved.html'] },
+      { href: '/contribution.html', label: 'Donate', match: ['/contribution.html'] }
     ];
 
     const current = location.pathname || '/';
