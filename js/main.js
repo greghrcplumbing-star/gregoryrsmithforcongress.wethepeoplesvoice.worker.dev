@@ -19,12 +19,12 @@
     const items = [
       { href: '/index.html', label: 'Home', match: ['/', '/index.html'] },
       { href: '/about.html', label: 'Meet Gregory', match: ['/about.html'] },
-      { href: '/priorities.html', label: 'Platform', match: ['/priorities.html'] },
+      { href: '/priorities.html', label: 'Issues', match: ['/priorities.html', '/issues.html'] },
       { href: '/speech.html', label: 'Speech', match: ['/speech.html'] },
       { href: '/media.html', label: 'Media', match: ['/media.html'] },
       { href: '/tour/index.html', label: 'Events', match: ['/tour/', '/events.html'] },
       { href: '/resources.html', label: 'Resources', match: ['/resources.html', '/mental-health.html', '/education/', '/support-team.html'] },
-      { href: '/volunteer.html', label: 'Volunteer', match: ['/volunteer.html'] },
+      { href: '/volunteer.html', label: 'Get Involved', match: ['/volunteer.html', '/get-involved.html'] },
       { href: '/contact.html', label: 'Contact', match: ['/contact.html'] }
     ];
 
