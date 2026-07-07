@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mental health, crisis, treatment, grief, stress, substance-use, and family support resources.">
+  <meta name="description" content="Mental health, wellness, treatment, stress, substance-use, family support resources, and AI-assisted resource navigation.">
   <title>Mental Health & Wellness | We The People Voice</title>
   <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .ai-wellness-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:22px}.ai-wellness-card{padding:22px;background:rgba(16,43,85,.88);border:1px solid rgba(255,255,255,.17);border-top:5px solid var(--gold);box-shadow:0 14px 34px rgba(0,0,0,.24)}.ai-wellness-card h3{margin:0 0 8px;color:#fff;text-transform:uppercase}.ai-wellness-card p{color:var(--muted);line-height:1.6}@media(max-width:1000px){.ai-wellness-grid{grid-template-columns:1fr 1fr}}@media(max-width:650px){.ai-wellness-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
 <header>
   <div class="nav">
-    <div class="brand">We The People Voice</div>
-    <nav class="menu" aria-label="Primary navigation"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/priorities.html">Priorities</a><a href="/resources.html">Resources</a><a href="/mental-health.html">Mental Health</a><a href="/support-team.html">Support Team</a><a href="/education/index.html">Education</a><a href="/events.html">Events</a><a href="/tour/index.html">Tour</a><a href="/volunteer.html">Volunteer</a><a href="/echo-wall.html">Echo Wall</a><a href="/media.html">Media</a><a href="/contact.html">Contact</a></nav>
+    <div class="brand"><a href="/index.html"><span>Gregory R. Smith</span><small>For Congress · We The People Voice</small></a></div>
+    <nav class="menu" aria-label="Primary navigation"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/priorities.html">Platform</a><a href="/resources.html">Resources</a><a href="/mental-health.html" aria-current="page">Mental Health</a><a href="/support-team.html">Support Team</a><a href="/education/index.html">Education</a><a href="/events.html">Events</a><a href="/tour/index.html">Tour</a><a href="/volunteer.html">Volunteer</a><a href="/echo-wall.html">Echo Wall</a><a href="/media.html">Newsroom</a><a href="/contact.html">Contact</a></nav>
   </div>
 </header>
 <main>
@@ -20,37 +23,45 @@
       <div class="kicker">You Matter • Help Is Real • Reaching Out Is Strength</div>
       <h1 class="section-title">Mental Health & Wellness</h1>
       <p class="lead">This page connects people with immediate support, treatment locators, peer resources, and practical next steps. It does not replace licensed medical or mental-health care.</p>
-      <div class="crisis-box" role="region" aria-label="Immediate crisis help">
+      <div class="crisis-box" role="region" aria-label="Immediate help">
         <h2>Need help right now?</h2>
-        <p><strong>Call or text 988</strong> to reach the 988 Suicide & Crisis Lifeline. If there is immediate danger, call 911 or go to the nearest emergency department.</p>
+        <p><strong>Call or text 988</strong> to reach trained crisis support. If there is immediate danger, call local emergency services or go to the nearest emergency department.</p>
         <div class="btns left"><a class="btn red" href="tel:988">Call 988</a><a class="btn" href="sms:988">Text 988</a><a class="btn light" href="https://988lifeline.org/chat/" target="_blank" rel="noopener noreferrer">Chat with 988</a></div>
       </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="wrap">
+      <p class="eyebrow">AI-Assisted Resource Navigation</p>
+      <h2 class="section-title">Youth and Adult Support Pathways</h2>
+      <p class="lead">AI assistance can help organize resource links, explain options in plain language, prepare questions for appointments, and guide people toward public support services. It is not a therapist, doctor, emergency service, or substitute for professional care.</p>
+      <div class="ai-wellness-grid">
+        <article class="ai-wellness-card"><h3>Youth Resource Guide</h3><p>Helps families find school, counseling, mentoring, tutoring, wellness, and community-support resources for young people.</p></article>
+        <article class="ai-wellness-card"><h3>Adult Resource Guide</h3><p>Helps adults sort through care options, treatment locators, peer groups, benefits, housing links, workforce support, and next-step checklists.</p></article>
+        <article class="ai-wellness-card"><h3>Recovery Resource Guide</h3><p>Organizes public recovery resources for addiction, alcoholism, family support, peer groups, and community-based help.</p></article>
+        <article class="ai-wellness-card"><h3>Follow-Up Helper</h3><p>Helps prepare call scripts, appointment questions, reminder checklists, and outreach notes so people do not have to start from a blank page.</p></article>
+      </div>
+      <div class="notice"><strong>Boundary:</strong> AI can organize public information and help people prepare. It cannot diagnose, treat, prescribe, replace a licensed provider, or handle urgent situations.</div>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap resource-grid">
       <article class="resource-card"><h2>Find Treatment</h2><p>Search for mental-health and substance-use treatment near you.</p><ul><li><a href="https://findtreatment.gov/" target="_blank" rel="noopener noreferrer">FindTreatment.gov</a></li><li><a href="https://www.samhsa.gov/find-help/locators" target="_blank" rel="noopener noreferrer">SAMHSA treatment locators</a></li><li><a href="https://findahealthcenter.hrsa.gov/" target="_blank" rel="noopener noreferrer">Community health centers</a></li></ul></article>
-
       <article class="resource-card"><h2>Substance-Use Support</h2><p>Confidential information, treatment referral, recovery support, and family guidance.</p><ul><li><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener noreferrer">SAMHSA National Helpline</a></li><li><a href="https://www.samhsa.gov/find-support/health-care-or-support/support-group-or-local-program" target="_blank" rel="noopener noreferrer">Find a support group or local program</a></li><li><a href="https://www.samhsa.gov/find-support" target="_blank" rel="noopener noreferrer">SAMHSA Find Support</a></li></ul></article>
-
-      <article class="resource-card"><h2>Veterans and Military Families</h2><p>Confidential crisis support and VA mental-health services.</p><ul><li><a href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener noreferrer">Veterans Crisis Line</a></li><li><a href="https://www.mentalhealth.va.gov/" target="_blank" rel="noopener noreferrer">VA mental-health services</a></li></ul></article>
-
+      <article class="resource-card"><h2>Veterans and Military Families</h2><p>Confidential support and VA mental-health services.</p><ul><li><a href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener noreferrer">Veterans Crisis Line</a></li><li><a href="https://www.mentalhealth.va.gov/" target="_blank" rel="noopener noreferrer">VA mental-health services</a></li></ul></article>
       <article class="resource-card"><h2>Disaster Distress</h2><p>Support after wildfire, hurricane, flood, violence, or another traumatic event.</p><ul><li><a href="https://www.samhsa.gov/find-help/helplines/disaster-distress-helpline" target="_blank" rel="noopener noreferrer">Disaster Distress Helpline</a></li><li><a href="https://www.samhsa.gov/find-support/in-crisis" target="_blank" rel="noopener noreferrer">Crisis help and disaster support</a></li></ul></article>
-
       <article class="resource-card"><h2>Grief and Loss</h2><p>Grief can affect sleep, concentration, energy, relationships, and physical health. Support from trusted people, peer groups, faith communities, or licensed professionals can help.</p><ul><li><a href="https://www.samhsa.gov/find-support" target="_blank" rel="noopener noreferrer">Find support and care</a></li><li><a href="https://www.usa.gov/death-loved-one" target="_blank" rel="noopener noreferrer">Government steps after a death</a></li></ul></article>
-
-      <article class="resource-card"><h2>Stress, Burnout, and Isolation</h2><p>Start small: eat, hydrate, sleep when possible, reduce immediate demands, contact one trusted person, and make one appointment or support call. Persistent or worsening symptoms deserve professional attention.</p><ul><li><a href="https://www.nimh.nih.gov/health/find-help" target="_blank" rel="noopener noreferrer">NIMH: Find help for mental illness</a></li><li><a href="https://www.samhsa.gov/find-support/how-to-cope" target="_blank" rel="noopener noreferrer">Healthy ways to cope</a></li></ul></article>
-
-      <article class="resource-card"><h2>Helping Someone Else</h2><p>Listen without arguing, take threats seriously, reduce access to immediate danger when safe, and connect the person with 988 or emergency care.</p><ul><li><a href="https://988lifeline.org/help-someone-else/" target="_blank" rel="noopener noreferrer">Help someone else</a></li><li><a href="https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide" target="_blank" rel="noopener noreferrer">Warning signs of suicide</a></li></ul></article>
-
+      <article class="resource-card"><h2>Stress, Burnout, and Isolation</h2><p>Start small: eat, hydrate, rest when possible, reduce immediate demands, contact one trusted person, and make one appointment or support call. Persistent or worsening symptoms deserve professional attention.</p><ul><li><a href="https://www.nimh.nih.gov/health/find-help" target="_blank" rel="noopener noreferrer">NIMH: Find help for mental illness</a></li><li><a href="https://www.samhsa.gov/find-support/how-to-cope" target="_blank" rel="noopener noreferrer">Healthy ways to cope</a></li></ul></article>
+      <article class="resource-card"><h2>Helping Someone Else</h2><p>Listen calmly, take concerns seriously, stay connected when safe, and help the person reach trained support or emergency care when needed.</p><ul><li><a href="https://988lifeline.org/help-someone-else/" target="_blank" rel="noopener noreferrer">Help someone else</a></li><li><a href="https://www.nimh.nih.gov/health/find-help" target="_blank" rel="noopener noreferrer">NIMH: Find help</a></li></ul></article>
       <article class="resource-card"><h2>Insurance and Affordable Care</h2><p>Use your insurer directory, Medicaid, Medicare, HealthCare.gov, or a community health center to look for covered care.</p><ul><li><a href="https://www.healthcare.gov/coverage/mental-health-substance-abuse-coverage/" target="_blank" rel="noopener noreferrer">Mental-health and substance-use coverage</a></li><li><a href="https://www.medicaid.gov/medicaid/benefits/behavioral-health-services/index.html" target="_blank" rel="noopener noreferrer">Medicaid behavioral-health services</a></li></ul></article>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <div class="notice"><strong>Important:</strong> This page offers general education and links. It does not diagnose conditions, provide therapy, or replace a licensed professional. In an emergency, use 911 or 988.</div>
+      <div class="notice"><strong>Important:</strong> This page offers general education and links. It does not diagnose conditions, provide therapy, or replace a licensed professional. For urgent help, use local emergency services or 988.</div>
     </div>
   </section>
 </main>
