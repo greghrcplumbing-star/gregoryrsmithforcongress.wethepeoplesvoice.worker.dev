@@ -1,1 +1,82 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Volunteer | We The People Voice</title><link rel="stylesheet" href="/css/style.css"></head><body><header><div class="nav"><div class="brand">We The People Voice</div><nav class="menu" aria-label="Primary navigation"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/priorities.html">Priorities</a><a href="/resources.html">Resources</a><a href="/mental-health.html">Mental Health</a><a href="/support-team.html">Support Team</a><a href="/education/index.html">Education</a><a href="/events.html">Events</a><a href="/tour/index.html">Tour</a><a href="/volunteer.html">Volunteer</a><a href="/echo-wall.html">Echo Wall</a><a href="/media.html">Media</a><a href="/contact.html">Contact</a></nav></div></header><section class="section"><div class="wrap"><h1 class="section-title">Volunteer</h1><p class="lead">Help with events, outreach, education resources, media, logistics, and community engagement.</p><form class="form" onsubmit="submitDemo(event,'volunteer')"><input required placeholder="Name"><input required type="email" placeholder="Email"><input placeholder="City / State"><select><option>Area of Interest</option><option>Events</option><option>Education</option><option>Media</option><option>Outreach</option><option>Operations</option></select><textarea placeholder="How would you like to help?"></textarea><button class="btn green" type="submit">Submit Interest</button></form></div></section><footer class="footer"><p><strong>We The People Voice</strong> — Listen. Learn. Build.</p><p><a href="/legal/privacy.html">Privacy Policy</a> | <a href="/legal/disclaimer.html">Legal Disclaimer</a> | <a href="/contact.html">Contact</a></p><p class="small">Educational information only. Verify important information through official sources.</p></footer><script src="/js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Volunteer, outreach, sponsor, venue, table, facility, and community support opportunities for We The People Voice.">
+  <title>Volunteer & Outreach | We The People Voice</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .volunteer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}.outreach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.outreach-card{padding:22px;background:rgba(16,43,85,.88);border:1px solid rgba(255,255,255,.17);border-top:5px solid var(--gold);box-shadow:0 14px 34px rgba(0,0,0,.24)}.outreach-card h3{margin:0 0 8px;color:#fff;text-transform:uppercase}.outreach-card p{color:var(--muted);line-height:1.6}.helper-box{padding:24px;border:4px double var(--gold);background:rgba(6,21,37,.82);box-shadow:var(--shadow)}.helper-box h2{margin-top:0;color:#fff;text-transform:uppercase}.helper-box p,.helper-box li{color:#dce9ff;line-height:1.65}@media(max-width:900px){.volunteer-grid,.outreach-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand"><a href="/index.html"><span>Gregory R. Smith</span><small>For Congress · We The People Voice</small></a></div>
+    <nav class="menu" aria-label="Primary navigation"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/priorities.html">Platform</a><a href="/resources.html">Resources</a><a href="/mental-health.html">Mental Health</a><a href="/support-team.html">Support Team</a><a href="/education/index.html">Education</a><a href="/events.html">Events</a><a href="/tour/index.html">Tour</a><a href="/volunteer.html" aria-current="page">Volunteer</a><a href="/echo-wall.html">Echo Wall</a><a href="/media.html">Newsroom</a><a href="/contact.html">Contact</a></nav>
+  </div>
+</header>
+<main>
+  <section class="section">
+    <div class="wrap volunteer-grid">
+      <div>
+        <p class="eyebrow">Volunteer · Outreach · Sponsorship Support</p>
+        <h1 class="section-title">Get Involved</h1>
+        <p class="lead">Help with events, outreach, education resources, media, logistics, public contact research, sponsor support, venue support, and community engagement.</p>
+        <form class="form" onsubmit="submitDemo(event,'volunteer')">
+          <input required placeholder="Name">
+          <input required type="email" placeholder="Email">
+          <input placeholder="City / State">
+          <select>
+            <option>Area of Interest</option>
+            <option>Events</option>
+            <option>Education</option>
+            <option>Media / Newsroom</option>
+            <option>Community Outreach</option>
+            <option>Sponsor Outreach</option>
+            <option>Venue / Facility Support</option>
+            <option>Tables / Chairs / Equipment</option>
+            <option>Operations</option>
+          </select>
+          <textarea placeholder="How would you like to help? If you can offer space, tables, food, printing, public outreach, or sponsor introductions, add details here."></textarea>
+          <button class="btn green" type="submit">Submit Interest</button>
+        </form>
+      </div>
+      <aside class="helper-box">
+        <h2>Campaign Support Needs</h2>
+        <p>The goal is to lower campaign costs by building community support city by city.</p>
+        <ul>
+          <li>Public venues or meeting rooms</li>
+          <li>Tables, chairs, tents, and basic event supplies</li>
+          <li>Printing, flyers, signage, and media help</li>
+          <li>Food, water, and volunteer support</li>
+          <li>Introductions to public sponsors and community partners</li>
+          <li>Public phone numbers, public emails, and official contact forms for outreach</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="wrap">
+      <h2 class="section-title">Outreach Lanes</h2>
+      <div class="outreach-grid">
+        <article class="outreach-card"><h3>Community Partners</h3><p>Reach out to public-facing community centers, nonprofits, churches, neighborhood groups, unions, schools, and civic organizations.</p></article>
+        <article class="outreach-card"><h3>Local Sponsors</h3><p>Ask businesses and organizations if they can contribute lawful support, sponsor a table, provide supplies, or share the campaign event.</p></article>
+        <article class="outreach-card"><h3>Facility Support</h3><p>Look for donated or reduced-cost rooms, halls, patios, parking lots, booths, tables, chairs, and event space for public campaign stops.</p></article>
+        <article class="outreach-card"><h3>Public Contact Only</h3><p>Use official public emails, public phone numbers, public websites, and contact forms. Do not use private personal contact information.</p></article>
+        <article class="outreach-card"><h3>Website Traffic</h3><p>Direct people to the campaign website so they can read the speech, join the tour, submit concerns, volunteer, and review resources.</p></article>
+        <article class="outreach-card"><h3>Follow-Up</h3><p>Track who was contacted, what they offered, what needs confirmation, and what must be reviewed before being announced publicly.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <p><strong>We The People Voice</strong> — Listen. Learn. Build.</p>
+  <p><a href="/legal/privacy.html">Privacy Policy</a> | <a href="/legal/disclaimer.html">Legal Disclaimer</a> | <a href="/contact.html">Contact</a></p>
+  <p class="small">Public campaign information only. Verify important information through official sources.</p>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>
