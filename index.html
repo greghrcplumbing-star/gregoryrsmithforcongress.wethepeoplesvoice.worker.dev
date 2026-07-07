@@ -3,28 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gregory R. Smith for Congress — We The People campaign homepage with the movement speech, community events, campaign tour, issues, volunteer action, and public resources." />
+  <meta name="description" content="Gregory R. Smith for Congress — We The People campaign homepage with the movement speech, community events, campaign tour map, issues, volunteer action, and public resources." />
   <title>Gregory R. Smith for Congress | We The People</title>
   <link rel="stylesheet" href="/css/style.css" />
   <style>
-    :root{--navy:#061525;--navy2:#09234a;--blue:#0b3775;--blue2:#102f61;--gold:#d7ad4a;--gold2:#ffe4a2;--cream:#fff8e7;--white:#fff;--soft:#dce9ff;--red:#b82226;--shadow:0 24px 70px rgba(0,0,0,.38)}
-    *{box-sizing:border-box}body.front-page{margin:0;background:radial-gradient(circle at 12% 8%,rgba(31,111,235,.32),transparent 28rem),radial-gradient(circle at 88% 15%,rgba(215,173,74,.16),transparent 28rem),linear-gradient(180deg,#061525,#09234a 46%,#0b3775);color:var(--cream);font-family:Arial,Helvetica,sans-serif}.wrap{width:min(1180px,calc(100% - 32px));margin:0 auto}.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}
-    header{position:sticky;top:0;z-index:50;border-bottom:2px solid rgba(215,173,74,.62);background:rgba(6,21,37,.96);box-shadow:0 12px 32px rgba(0,0,0,.32);backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;width:min(1240px,calc(100% - 24px));margin:0 auto;padding:12px 0}.brand a,.menu a,.resource-tabs a,.gold-bubble,.hero-actions a,.menu-toggle{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,228,162,.86);border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;text-decoration:none;font-weight:950;letter-spacing:.04em;box-shadow:0 10px 24px rgba(215,173,74,.24);transition:.18s ease}.brand a{min-height:50px;padding:8px 16px;flex-direction:column;align-items:flex-start;white-space:nowrap;line-height:1.05}.brand small{font-size:.66rem;text-transform:uppercase;color:rgba(16,16,16,.75)}.menu{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.menu a{min-height:40px;padding:9px 12px;font-size:.78rem;text-transform:uppercase}.menu a[href*="contribution"]{background:linear-gradient(135deg,#b82226,#ee4f45);color:#fff}.menu-toggle{display:none}.brand a:hover,.menu a:hover,.resource-tabs a:hover,.hero-actions a:hover,.gold-bubble:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(215,173,74,.36)}
+    :root{--navy:#061525;--navy2:#09234a;--blue:#0b3775;--gold:#d7ad4a;--gold2:#ffe4a2;--cream:#fff8e7;--white:#fff;--soft:#dce9ff;--red:#b82226;--shadow:0 24px 70px rgba(0,0,0,.38)}
+    *{box-sizing:border-box}body.front-page{margin:0;background:radial-gradient(circle at 12% 8%,rgba(31,111,235,.32),transparent 28rem),radial-gradient(circle at 88% 15%,rgba(215,173,74,.16),transparent 28rem),linear-gradient(180deg,#061525,#09234a 46%,#0b3775);color:var(--cream);font-family:Arial,Helvetica,sans-serif}.wrap{width:min(1180px,calc(100% - 32px));margin:0 auto}
+    header{position:sticky;top:0;z-index:50;border-bottom:2px solid rgba(215,173,74,.62);background:rgba(6,21,37,.96);box-shadow:0 12px 32px rgba(0,0,0,.32);backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;width:min(1240px,calc(100% - 24px));margin:0 auto;padding:12px 0}.brand a,.menu a,.resource-tabs a,.gold-bubble,.hero-actions a{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,228,162,.86);border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;text-decoration:none;font-weight:950;letter-spacing:.04em;box-shadow:0 10px 24px rgba(215,173,74,.24);transition:.18s ease}.brand a{min-height:50px;padding:8px 16px;flex-direction:column;align-items:flex-start;white-space:nowrap;line-height:1.05}.brand small{font-size:.66rem;text-transform:uppercase;color:rgba(16,16,16,.75)}.menu{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.menu a{min-height:40px;padding:9px 12px;font-size:.78rem;text-transform:uppercase}.menu a[href*="contribution"]{background:linear-gradient(135deg,#b82226,#ee4f45);color:#fff}.brand a:hover,.menu a:hover,.resource-tabs a:hover,.hero-actions a:hover,.gold-bubble:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(215,173,74,.36)}
     .resource-top{background:linear-gradient(135deg,#0b3775,#061525);border-bottom:3px solid var(--gold)}.resource-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:14px 0}.resource-tabs a{min-height:42px;padding:10px 14px;font-size:.78rem;text-transform:uppercase}
-    section{scroll-margin-top:150px}.home-hero{position:relative;overflow:hidden;border-bottom:4px double var(--gold);background:linear-gradient(90deg,rgba(6,21,37,.98),rgba(6,21,37,.88) 44%,rgba(6,21,37,.64)),url('/assets/images/chicago-launch.svg') center/cover no-repeat}.home-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 18%,rgba(255,228,162,.22),transparent 18rem),linear-gradient(115deg,rgba(255,255,255,.08) 0 8%,transparent 8% 14%,rgba(255,255,255,.04) 14% 18%,transparent 18% 100%);pointer-events:none}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(300px,.78fr);gap:34px;align-items:center;padding:64px 0 48px}.stars{color:var(--gold2);font-size:1.35rem;letter-spacing:.35em;margin-bottom:12px}.launch-kicker{display:inline-block;margin:0 0 16px;padding:9px 13px;border:1px solid rgba(255,255,255,.45);border-radius:999px;background:rgba(9,35,74,.72);color:var(--gold2);font:bold .8rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em}.campaign-title{margin:0;text-transform:uppercase;line-height:.9;letter-spacing:.01em;text-shadow:0 5px 0 rgba(0,0,0,.62),3px 3px 0 rgba(215,173,74,.35)}.candidate-name{display:block;font-size:clamp(2.1rem,5vw,4.6rem);color:#fff}.people-headline{display:block;margin-top:8px;font-size:clamp(3.1rem,7.8vw,7.3rem);color:var(--gold2);letter-spacing:-.055em}.office-line{display:block;margin:18px 0;color:var(--gold2);font-size:clamp(1.4rem,2.9vw,2.4rem);font-weight:1000;letter-spacing:.14em;text-transform:uppercase}.hero-copy{max-width:780px;font-size:clamp(1.05rem,1.65vw,1.22rem);line-height:1.72;color:#dce9ff}.mission-quote{max-width:780px;margin:22px 0;padding:18px 22px;border-left:7px solid var(--gold);background:rgba(6,21,37,.72);box-shadow:var(--shadow);font-size:clamp(1.25rem,2.25vw,1.8rem);font-weight:900;line-height:1.35}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.hero-actions a{min-height:46px;padding:12px 16px;text-transform:uppercase}.hero-actions a.secondary{background:rgba(255,255,255,.10);color:#fff}.hero-actions a.red{background:linear-gradient(135deg,#b82226,#ef5148);color:#fff}
-    .poster-frame{border:4px double var(--gold);background:rgba(6,21,37,.84);box-shadow:var(--shadow);overflow:hidden;border-radius:18px}.poster-slot{position:relative;min-height:320px;background:linear-gradient(135deg,#09234a,#061525);display:grid;place-items:center;text-align:center;padding:26px}.poster-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.poster-slot.image-missing img{display:none}.poster-text{position:relative;z-index:1}.poster-text strong{display:block;color:#fff;font-family:Georgia,serif;font-size:clamp(1.8rem,4vw,3.4rem);line-height:.96;text-transform:uppercase}.poster-text span{display:block;margin-top:12px;color:var(--gold2);font-weight:900;text-transform:uppercase;letter-spacing:.08em}.poster-frame figcaption{padding:14px 16px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;font-weight:950;text-align:center;text-transform:uppercase;letter-spacing:.08em}
+    section{scroll-margin-top:150px}.home-hero{position:relative;overflow:hidden;border-bottom:4px double var(--gold);background:linear-gradient(90deg,rgba(6,21,37,.98),rgba(6,21,37,.88) 44%,rgba(6,21,37,.64)),url('/assets/images/chicago-launch.svg') center/cover no-repeat}.home-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 18%,rgba(255,228,162,.22),transparent 18rem);pointer-events:none}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(300px,.78fr);gap:34px;align-items:center;padding:64px 0 48px}.stars{color:var(--gold2);font-size:1.35rem;letter-spacing:.35em;margin-bottom:12px}.launch-kicker{display:inline-block;margin:0 0 16px;padding:9px 13px;border:1px solid rgba(255,255,255,.45);border-radius:999px;background:rgba(9,35,74,.72);color:var(--gold2);font:bold .8rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em}.campaign-title{margin:0;text-transform:uppercase;line-height:.9;letter-spacing:.01em;text-shadow:0 5px 0 rgba(0,0,0,.62),3px 3px 0 rgba(215,173,74,.35)}.candidate-name{display:block;font-size:clamp(2.1rem,5vw,4.6rem);color:#fff}.people-headline{display:block;margin-top:8px;font-size:clamp(3.1rem,7.8vw,7.3rem);color:var(--gold2);letter-spacing:-.055em}.office-line{display:block;margin:18px 0;color:var(--gold2);font-size:clamp(1.4rem,2.9vw,2.4rem);font-weight:1000;letter-spacing:.14em;text-transform:uppercase}.hero-copy{max-width:780px;font-size:clamp(1.05rem,1.65vw,1.22rem);line-height:1.72;color:#dce9ff}.mission-quote{max-width:780px;margin:22px 0;padding:18px 22px;border-left:7px solid var(--gold);background:rgba(6,21,37,.72);box-shadow:var(--shadow);font-size:clamp(1.25rem,2.25vw,1.8rem);font-weight:900;line-height:1.35}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.hero-actions a{min-height:46px;padding:12px 16px;text-transform:uppercase}.hero-actions a.secondary{background:rgba(255,255,255,.10);color:#fff}.hero-actions a.red{background:linear-gradient(135deg,#b82226,#ef5148);color:#fff}
+    .poster-frame,.map-frame{border:4px double var(--gold);background:rgba(6,21,37,.84);box-shadow:var(--shadow);overflow:hidden;border-radius:18px}.poster-slot{position:relative;min-height:320px;background:linear-gradient(135deg,#09234a,#061525);display:grid;place-items:center;text-align:center;padding:26px}.poster-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.poster-slot.image-missing img{display:none}.poster-text{position:relative;z-index:1}.poster-text strong{display:block;color:#fff;font-family:Georgia,serif;font-size:clamp(1.8rem,4vw,3.4rem);line-height:.96;text-transform:uppercase}.poster-text span{display:block;margin-top:12px;color:var(--gold2);font-weight:900;text-transform:uppercase;letter-spacing:.08em}.poster-frame figcaption,.map-frame figcaption{padding:14px 16px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;font-weight:950;text-align:center;text-transform:uppercase;letter-spacing:.08em}
     .quick-strip{background:var(--navy);border-bottom:3px solid var(--gold)}.quick-strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:18px 0}.quick-strip a{padding:17px 18px;text-align:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;border-radius:999px;font-weight:950;text-transform:uppercase;text-decoration:none;letter-spacing:.055em;box-shadow:0 10px 24px rgba(215,173,74,.24)}
     .section-pad{padding:58px 0;border-bottom:4px double var(--gold)}.section-head{max-width:920px;margin:0 auto 30px;text-align:center}.section-head h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;color:#fff}.section-head p{margin:0;color:#dce9ff;font-size:1.08rem;line-height:1.7}.two-col{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(0,1.1fr);gap:28px;align-items:center}.text-panel{padding:28px;background:rgba(6,21,37,.76);border:1px solid rgba(255,255,255,.18);border-left:7px solid var(--gold);box-shadow:0 16px 40px rgba(0,0,0,.24);border-radius:18px}.text-panel h2,.text-panel h3{margin:0 0 12px;text-transform:uppercase;color:#fff;font-size:clamp(1.8rem,3.6vw,3rem);line-height:1}.text-panel p{color:#dce9ff;line-height:1.7;font-size:1.06rem}.values-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.value-mini{padding:16px;border:1px solid rgba(255,228,162,.32);border-radius:16px;background:rgba(255,255,255,.07);text-align:center}.value-mini strong{display:block;color:var(--gold2);text-transform:uppercase;margin-bottom:7px}.value-mini span{color:#dce9ff;font-size:.92rem;line-height:1.45}
-    .speech-strip{display:grid;grid-template-columns:minmax(280px,.95fr) minmax(0,1.05fr);gap:24px;align-items:stretch}.parchment-card{padding:28px;border:6px double #7a4a22;border-radius:18px;background:radial-gradient(circle at 30% 12%,rgba(255,255,255,.5),transparent 18rem),linear-gradient(180deg,#f0d7a1,#d4ac69);color:#24170d;box-shadow:var(--shadow)}.parchment-card h2{font-family:Georgia,serif;text-transform:uppercase;font-size:clamp(2.1rem,4vw,3.5rem);line-height:1;margin:0 0 16px}.parchment-card p{font-family:Georgia,serif;font-size:1.08rem;line-height:1.65}.movement-card{border-radius:18px;overflow:hidden;background:linear-gradient(120deg,rgba(6,21,37,.9),rgba(9,35,74,.68)),url('/assets/images/campaign-road.svg') center/cover no-repeat;display:flex;align-items:center;padding:34px;border:1px solid rgba(255,228,162,.38);box-shadow:var(--shadow)}.movement-card h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2rem,4vw,3.2rem)}.movement-card p{line-height:1.7;color:#dce9ff}.movement-card .gold-bubble{width:max-content;margin-top:12px;padding:12px 18px}
-    .event-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.event-card{padding:22px;border:3px solid rgba(215,173,74,.65);border-radius:18px;background:linear-gradient(135deg,rgba(6,21,37,.92),rgba(11,55,117,.72));box-shadow:0 18px 40px rgba(0,0,0,.28);min-height:230px}.event-card h3{margin:0 0 10px;color:#fff;text-transform:uppercase;font-size:clamp(1.55rem,3vw,2.25rem)}.event-card p{color:#dce9ff;line-height:1.6}.event-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.event-meta span{padding:10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,228,162,.3);color:var(--gold2);font-weight:900;text-align:center}.event-card .gold-bubble{padding:11px 15px}.tour-national{display:grid;grid-template-columns:1fr 1fr;gap:24px}.badge-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.city-badge{min-height:138px;border-radius:24px 24px 42px 42px;border:3px solid rgba(215,173,74,.65);background:radial-gradient(circle at 50% 15%,rgba(255,228,162,.25),transparent 42%),linear-gradient(180deg,#12396f,#061525);display:grid;place-items:center;text-align:center;padding:12px;box-shadow:0 16px 30px rgba(0,0,0,.22)}.city-badge strong{display:block;color:#fff;text-transform:uppercase;font-size:1.1rem;letter-spacing:.06em}.city-badge span{display:block;color:var(--gold2);font-weight:900;font-size:.85rem;margin-top:6px}.state-map{min-height:240px;border-radius:18px;border:1px solid rgba(255,228,162,.36);background:radial-gradient(circle at 50% 45%,rgba(215,173,74,.32),transparent 24%),linear-gradient(135deg,#061525,#0b3775);display:grid;place-items:center;text-align:center;padding:26px}.state-map strong{display:block;font-family:Georgia,serif;text-transform:uppercase;font-size:clamp(2rem,4vw,3.5rem);line-height:1.08;color:#fff}.state-map em{display:block;color:#b82226;font-style:normal}.fight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fight-card{min-height:190px;padding:22px;border-radius:18px;border:1px solid rgba(255,228,162,.34);background:linear-gradient(135deg,rgba(6,21,37,.86),rgba(9,35,74,.72));box-shadow:0 16px 34px rgba(0,0,0,.24)}.fight-card strong{display:block;color:var(--gold2);text-transform:uppercase;font-size:1.15rem;line-height:1.25}.fight-card span{display:block;color:#dce9ff;margin-top:8px;line-height:1.55}.perspective{display:grid;grid-template-columns:1fr 1.3fr;gap:18px;align-items:center}.small-note{background:#efe2c5;color:#061525;border-radius:18px;padding:22px}.small-note h3{margin:0 0 10px;text-transform:uppercase}.trump-card{padding:20px;border-radius:18px;border:1px solid rgba(255,228,162,.38);background:linear-gradient(135deg,#061525,#0b3775);box-shadow:0 16px 34px rgba(0,0,0,.24)}.trump-card strong{display:block;color:#fff;text-transform:uppercase;font-size:1.6rem}.trump-card p{color:#dce9ff;line-height:1.6}.resource-callout{padding:58px 0;background:#efe2c5;color:#061525}.resource-card-clean{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:26px;align-items:center}.resource-card-clean h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2.1rem,4vw,3.4rem);line-height:1;color:#061525}.resource-card-clean p{line-height:1.7}.resource-preview{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.resource-pill{display:block;padding:15px;border:2px solid #9d7024;border-radius:999px;text-align:center;text-decoration:none;color:#061525;background:linear-gradient(145deg,#fff,#e4c785);font:bold .9rem Arial,sans-serif;text-transform:uppercase;box-shadow:0 10px 22px rgba(0,0,0,.16)}.footer-contact{padding:38px 20px;text-align:center;border-top:4px solid var(--gold);background:#05101f;color:#f7e6bf}.footer-contact a{color:var(--gold2)}
-    @media(max-width:980px){.nav{align-items:stretch;flex-direction:column}.menu{justify-content:center}.hero-grid,.two-col,.speech-strip,.tour-national,.perspective,.resource-card-clean{grid-template-columns:1fr}.quick-strip .wrap{grid-template-columns:1fr 1fr}.values-row,.fight-grid{grid-template-columns:1fr 1fr}.hero-grid{text-align:center}.hero-actions{justify-content:center}.poster-frame{max-width:560px;margin:0 auto}.event-grid{grid-template-columns:1fr}}@media(max-width:640px){.quick-strip .wrap,.values-row,.fight-grid,.resource-preview,.badge-row{grid-template-columns:1fr}.people-headline{font-size:3.45rem}.candidate-name{font-size:2.25rem}.menu a{width:calc(50% - 6px)}.event-meta{grid-template-columns:1fr}}
+    .map-frame img{width:100%;display:block;background:#061525}.map-image-slot{min-height:420px;display:grid;place-items:center;background:linear-gradient(135deg,#061525,#0b3775);text-align:center;padding:28px}.map-image-slot.image-missing img{display:none}.map-fallback{max-width:720px}.map-fallback strong{display:block;color:#fff;font-family:Georgia,serif;font-size:clamp(2.2rem,5vw,4.5rem);line-height:1;text-transform:uppercase}.map-fallback span{display:block;margin-top:14px;color:var(--gold2);font-weight:950;text-transform:uppercase;letter-spacing:.08em}.city-links{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}.city-links a{padding:13px 10px;border:1px solid rgba(255,228,162,.45);border-radius:14px;background:rgba(255,255,255,.08);color:var(--gold2);text-align:center;text-decoration:none;font-weight:950;text-transform:uppercase}.city-links a:hover{background:var(--gold);color:#101010}
+    .speech-strip{display:grid;grid-template-columns:minmax(280px,.95fr) minmax(0,1.05fr);gap:24px;align-items:stretch}.parchment-card{padding:28px;border:6px double #7a4a22;border-radius:18px;background:linear-gradient(180deg,#f0d7a1,#d4ac69);color:#24170d;box-shadow:var(--shadow)}.parchment-card h2{font-family:Georgia,serif;text-transform:uppercase;font-size:clamp(2.1rem,4vw,3.5rem);line-height:1;margin:0 0 16px}.parchment-card p{font-family:Georgia,serif;font-size:1.08rem;line-height:1.65}.movement-card{border-radius:18px;overflow:hidden;background:linear-gradient(120deg,rgba(6,21,37,.9),rgba(9,35,74,.68)),url('/assets/images/campaign-road.svg') center/cover no-repeat;display:flex;align-items:center;padding:34px;border:1px solid rgba(255,228,162,.38);box-shadow:var(--shadow)}.movement-card h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2rem,4vw,3.2rem)}.movement-card p{line-height:1.7;color:#dce9ff}.movement-card .gold-bubble{width:max-content;margin-top:12px;padding:12px 18px}
+    .event-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.event-card{padding:22px;border:3px solid rgba(215,173,74,.65);border-radius:18px;background:linear-gradient(135deg,rgba(6,21,37,.92),rgba(11,55,117,.72));box-shadow:0 18px 40px rgba(0,0,0,.28);min-height:230px}.event-card h3{margin:0 0 10px;color:#fff;text-transform:uppercase;font-size:clamp(1.55rem,3vw,2.25rem)}.event-card p{color:#dce9ff;line-height:1.6}.event-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.event-meta span{padding:10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,228,162,.3);color:var(--gold2);font-weight:900;text-align:center}.event-card .gold-bubble{padding:11px 15px}.fight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fight-card{min-height:190px;padding:22px;border-radius:18px;border:1px solid rgba(255,228,162,.34);background:linear-gradient(135deg,rgba(6,21,37,.86),rgba(9,35,74,.72));box-shadow:0 16px 34px rgba(0,0,0,.24)}.fight-card strong{display:block;color:var(--gold2);text-transform:uppercase;font-size:1.15rem;line-height:1.25}.fight-card span{display:block;color:#dce9ff;margin-top:8px;line-height:1.55}.resource-callout{padding:58px 0;background:#efe2c5;color:#061525}.resource-card-clean{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:26px;align-items:center}.resource-card-clean h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2.1rem,4vw,3.4rem);line-height:1;color:#061525}.resource-card-clean p{line-height:1.7}.resource-preview{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.resource-pill{display:block;padding:15px;border:2px solid #9d7024;border-radius:999px;text-align:center;text-decoration:none;color:#061525;background:linear-gradient(145deg,#fff,#e4c785);font-weight:950;text-transform:uppercase;box-shadow:0 10px 22px rgba(0,0,0,.16)}.footer-contact{padding:38px 20px;text-align:center;border-top:4px solid var(--gold);background:#05101f;color:#f7e6bf}.footer-contact a{color:var(--gold2)}
+    @media(max-width:980px){.nav{display:grid;grid-template-columns:1fr}.menu{justify-content:center}.hero-grid,.two-col,.speech-strip,.resource-card-clean{grid-template-columns:1fr}.values-row,.fight-grid,.event-grid{grid-template-columns:1fr}.quick-strip .wrap,.city-links{grid-template-columns:1fr 1fr}.resource-preview{grid-template-columns:1fr 1fr}}
+    @media(max-width:640px){.candidate-name{font-size:2rem}.people-headline{font-size:3rem}.quick-strip .wrap,.city-links,.resource-preview{grid-template-columns:1fr}.map-image-slot{min-height:300px}.menu a{width:100%}}
   </style>
 </head>
 <body class="front-page">
   <header>
     <div class="nav">
       <div class="brand"><a href="/index.html"><span>Gregory R. Smith</span><small>For Congress · We The People Voice</small></a></div>
-      <nav class="menu" aria-label="Primary navigation"></nav>
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="/index.html" aria-current="page">Home</a>
+        <a href="/tour/index.html">Tour</a>
+        <a href="/echo-wall.html">Echo Wall</a>
+        <a href="/volunteer.html">Get Involved</a>
+        <a href="/education/index.html">Education</a>
+        <a href="/about.html">Meet Gregory</a>
+        <a href="/priorities.html">Platform</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/contribution.html">Donate</a>
+      </nav>
     </div>
   </header>
 
@@ -55,6 +67,7 @@
             <a class="red" href="/volunteer.html">Get Involved</a>
             <a href="/contribution.html">Donate Today</a>
             <a class="secondary" href="/speech.html">Read The Speech</a>
+            <a class="secondary" href="/tour/index.html">Find A City</a>
           </div>
         </div>
         <figure class="poster-frame" aria-label="Gregory R. Smith campaign portrait area">
@@ -71,8 +84,36 @@
       <div class="wrap">
         <a href="/speech.html">Movement Speech</a>
         <a href="/tour/index.html">Community Events</a>
-        <a href="/priorities.html">Issues</a>
+        <a href="/priorities.html">Platform Issues</a>
         <a href="/volunteer.html">Volunteer</a>
+      </div>
+    </section>
+
+    <section class="section-pad" id="campaign-map">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Community Block Party Tour Map</h2>
+          <p>One conversation. One community. One movement. The tour map gives supporters a fast way to find the city stops and follow the campaign across the country.</p>
+        </div>
+        <figure class="map-frame">
+          <div class="map-image-slot">
+            <img src="/assets/images/campaign-map.jpg" alt="We The People Community Block Party Tour map showing campaign city stops" onerror="this.parentElement.classList.add('image-missing');this.remove();" />
+            <div class="map-fallback"><strong>Campaign Map Ready</strong><span>Upload the map image as /assets/images/campaign-map.jpg</span></div>
+          </div>
+          <figcaption>10 Cities · 1 Mission · Countless Voices</figcaption>
+        </figure>
+        <div class="city-links" aria-label="Campaign city quick links">
+          <a href="/tour/chicago.html">Chicago</a>
+          <a href="/tour/new-york.html">New York</a>
+          <a href="/tour/atlanta.html">Atlanta</a>
+          <a href="/tour/dallas.html">Dallas</a>
+          <a href="/tour/denver.html">Denver</a>
+          <a href="/tour/seattle.html">Seattle</a>
+          <a href="/tour/portland.html">Portland</a>
+          <a href="/tour/los-angeles.html">Los Angeles</a>
+          <a href="/tour/maui.html">Maui</a>
+          <a href="/tour/washington-dc.html">Washington DC</a>
+        </div>
       </div>
     </section>
 
@@ -138,28 +179,6 @@
       </div>
     </section>
 
-    <section class="section-pad" id="tour">
-      <div class="wrap tour-national">
-        <div class="text-panel">
-          <p class="launch-kicker">Campaign Tour</p>
-          <h2>City by city. Community by community.</h2>
-          <div class="badge-row" aria-label="Featured campaign cities">
-            <div class="city-badge"><strong>Chicago</strong><span>Aug 15 · 2026</span></div>
-            <div class="city-badge"><strong>Atlanta</strong><span>Sep 5 · 2026</span></div>
-            <div class="city-badge"><strong>Denver</strong><span>Oct 17 · 2026</span></div>
-            <div class="city-badge"><strong>Los Angeles</strong><span>Nov 7 · 2026</span></div>
-            <div class="city-badge"><strong>Maui</strong><span>Dec 5 · 2026</span></div>
-          </div>
-          <div class="hero-actions"><a href="/tour/index.html">View Full Tour Schedule</a></div>
-        </div>
-        <div class="text-panel">
-          <p class="launch-kicker">National Movement</p>
-          <div class="state-map"><strong>Fifty States.<br>Fifty Voices.<br><em>One Nation</em> Under God.</strong></div>
-          <p>The campaign tour is designed to listen first, organize local concerns, and carry community priorities forward.</p>
-        </div>
-      </div>
-    </section>
-
     <section class="section-pad" id="who-we-fight-for">
       <div class="wrap">
         <div class="section-head"><h2>Who We Fight For</h2><p>Built by the working class, for the working class. Every job matters. Every voice matters.</p></div>
@@ -167,21 +186,6 @@
           <div class="fight-card"><strong>Working Families & Trades</strong><span>Jobs, wages, cost of living, housing, small business, and infrastructure.</span></div>
           <div class="fight-card"><strong>Veterans & First Responders</strong><span>Honor, service, unity, public safety, benefits, and community support.</span></div>
           <div class="fight-card"><strong>Families & Neighborhoods</strong><span>Education, mental health, opportunity, family resources, and practical help.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="perspective">
-      <div class="wrap perspective">
-        <div class="small-note">
-          <h3>Perspective First</h3>
-          <p>Leadership commentary belongs lower on the page so the homepage stays focused on people, issues, events, and community action.</p>
-          <a class="resource-pill" href="/priorities.html">Read The Perspective</a>
-        </div>
-        <div class="trump-card">
-          <strong>Credit Where It’s Due</strong>
-          <p>A separate perspective/policy area can recognize past or current leaders while keeping the main campaign message centered on the people, accountability, and practical solutions.</p>
-          <a class="gold-bubble" href="/priorities.html">Learn More</a>
         </div>
       </div>
     </section>
@@ -194,7 +198,7 @@
           <a class="resource-pill" href="/resources.html">Explore All Resources</a>
         </div>
         <div class="resource-preview" aria-label="Featured resource categories">
-          <a class="resource-pill" href="/priorities.html">Issues</a>
+          <a class="resource-pill" href="/priorities.html">Platform</a>
           <a class="resource-pill" href="/contact.html">Contact</a>
           <a class="resource-pill" href="/volunteer.html">Volunteer</a>
           <a class="resource-pill" href="/resources.html">Resources</a>
