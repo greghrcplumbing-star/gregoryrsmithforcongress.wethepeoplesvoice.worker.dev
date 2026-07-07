@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Community issues input dashboard for Gregory R. Smith for Congress and We The People Voice.">
+  <title>Community Issues Dashboard | Gregory R. Smith for Congress</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .issues-hero{padding:78px 0 54px;background:linear-gradient(120deg,rgba(6,21,37,.96),rgba(9,35,74,.84)),url('/assets/images/campaign-road.svg') center/cover no-repeat;border-bottom:4px double var(--gold)}
+    .issues-panel{max-width:980px;padding:30px;background:rgba(6,21,37,.82);border:1px solid rgba(255,255,255,.18);border-left:7px solid var(--gold);box-shadow:var(--shadow)}
+    .issues-panel h1{margin:0 0 14px;color:#fff;text-transform:uppercase;font-size:clamp(2.45rem,6vw,5rem);line-height:.95}.issues-panel p{color:#dce9ff;line-height:1.7;font-size:1.08rem}
+    .issues-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.8fr);gap:24px;align-items:start}.issue-form,.priority-card,.fundamental-card{padding:24px;background:rgba(16,43,85,.88);border:1px solid rgba(255,255,255,.17);border-top:5px solid var(--gold);box-shadow:0 14px 34px rgba(0,0,0,.24)}
+    .issue-form label{display:block;margin:0 0 14px;color:#fff;font-weight:900;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em}.issue-form input,.issue-form select,.issue-form textarea{width:100%;margin-top:7px;padding:12px;border:1px solid rgba(255,228,162,.55);border-radius:10px;background:#fff;color:#061525;font:inherit}.issue-form textarea{min-height:138px;resize:vertical}.issue-form small{display:block;margin-top:4px;color:#dce9ff;text-transform:none;font-weight:500;letter-spacing:0}.chart-list{display:grid;gap:12px;margin-top:14px}.chart-row{display:grid;grid-template-columns:150px 1fr 44px;gap:10px;align-items:center;color:#fff}.bar{height:18px;border-radius:999px;background:rgba(255,255,255,.15);overflow:hidden}.bar span{display:block;height:100%;background:linear-gradient(90deg,#d7ad4a,#ffe4a2)}.fundamentals{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.fundamental-card h3,.priority-card h2,.issue-form h2{margin:0 0 10px;color:#fff;text-transform:uppercase}.fundamental-card p,.priority-card p,.issue-form p{color:var(--muted);line-height:1.65}.notice-box{margin-top:18px;padding:16px;border-left:6px solid var(--gold);background:rgba(255,255,255,.08);color:#dce9ff;line-height:1.6}.btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}@media(max-width:900px){.issues-grid,.fundamentals{grid-template-columns:1fr}.chart-row{grid-template-columns:120px 1fr 38px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand"><a href="/index.html"><span>Gregory R. Smith</span><small>For Congress · We The People Voice</small></a></div>
+    <nav class="menu" aria-label="Primary navigation"><a href="/index.html">Home</a><a href="/about.html">Meet Gregory</a><a href="/priorities.html">Platform</a><a href="/community-issues.html" aria-current="page">Community Issues</a><a href="/resources.html">Resources</a><a href="/mental-health.html">Mental Health</a><a href="/speech.html">Speech</a><a href="/media.html">Newsroom</a><a href="/volunteer.html">Volunteer</a><a href="/endorsement.html">Endorse</a><a href="/contribution.html">Contribute</a><a href="/contact.html">Contact</a></nav>
+  </div>
+</header>
+<main>
+  <section class="issues-hero">
+    <div class="wrap issues-panel">
+      <p class="eyebrow">Listen First · Organize The Facts · Move Toward Results</p>
+      <h1>Community Issues Dashboard</h1>
+      <p>This campaign is not one person talking over everybody. This page is built so people can submit the issues they are dealing with, the campaign can organize those concerns into clear priorities, and Gregory can bring the strongest facts to colleagues, community leaders, and decision-makers.</p>
+      <p><strong>The mission:</strong> talk to everybody, find the best situation, move toward the fastest workable solution, and track results people can actually see.</p>
+      <div class="btn-row"><a class="btn gold" href="#submit-issue">Submit An Issue</a><a class="btn light" href="#priority-graph">View Priority Graph</a><a class="btn" href="/endorsement.html">Endorse The Work</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="submit-issue">
+    <div class="wrap issues-grid">
+      <form class="issue-form" name="community-issues" method="post" data-netlify="true">
+        <input type="hidden" name="form-name" value="community-issues">
+        <h2>Tell Us What Needs Work</h2>
+        <p>Use this form to help build the issue map. Submissions help show what people want addressed first.</p>
+        <label>Name <small>Optional if you want to stay private.</small><input type="text" name="name" autocomplete="name"></label>
+        <label>Email <small>Optional, only if the campaign may follow up.</small><input type="email" name="email" autocomplete="email"></label>
+        <label>City / State <input type="text" name="location" placeholder="Example: Wailuku, HI"></label>
+        <label>Issue Category
+          <select name="category" required>
+            <option value="">Choose one</option>
+            <option>Cost of living</option><option>Housing</option><option>Healthcare</option><option>Mental health and recovery</option><option>Jobs and wages</option><option>Education</option><option>Veterans and first responders</option><option>Public safety</option><option>Small business</option><option>Government accountability</option><option>Other</option>
+          </select>
+        </label>
+        <label>Urgency
+          <select name="urgency" required><option value="">Choose one</option><option>Immediate</option><option>High</option><option>Medium</option><option>Long-term</option></select>
+        </label>
+        <label>What is happening? <textarea name="message" required placeholder="Explain the issue, who it affects, and what result would help."></textarea></label>
+        <label><input type="checkbox" name="permission_to_contact" value="yes"> The campaign may contact me about this issue.</label>
+        <button class="btn gold" type="submit">Submit Issue</button>
+        <div class="notice-box"><strong>Public note:</strong> This form helps organize campaign priorities. It does not guarantee personal casework, legal help, medical help, emergency help, or government action.</div>
+      </form>
+
+      <aside class="priority-card" id="priority-graph">
+        <h2>Priority Graph</h2>
+        <p>Live storage can be connected next. Until then, this chart shows the structure the campaign will use to group public submissions.</p>
+        <div class="chart-list" aria-label="Example community priority graph">
+          <div class="chart-row"><strong>Cost of living</strong><div class="bar"><span style="width:92%"></span></div><span>42</span></div>
+          <div class="chart-row"><strong>Healthcare</strong><div class="bar"><span style="width:77%"></span></div><span>35</span></div>
+          <div class="chart-row"><strong>Housing</strong><div class="bar"><span style="width:68%"></span></div><span>31</span></div>
+          <div class="chart-row"><strong>Jobs/Wages</strong><div class="bar"><span style="width:59%"></span></div><span>27</span></div>
+          <div class="chart-row"><strong>Education</strong><div class="bar"><span style="width:42%"></span></div><span>19</span></div>
+          <div class="chart-row"><strong>Safety</strong><div class="bar"><span style="width:31%"></span></div><span>14</span></div>
+        </div>
+        <div class="notice-box"><strong>Next build step:</strong> connect this form to a database, Google Sheet, or serverless endpoint so the graph updates from real public submissions.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="wrap">
+      <p class="eyebrow">The Fundamentals</p>
+      <h2 class="section-title">How The Work Gets Done</h2>
+      <div class="fundamentals">
+        <article class="fundamental-card"><h3>1. Listen</h3><p>Collect what people are actually saying from forms, events, calls, emails, and community conversations.</p></article>
+        <article class="fundamental-card"><h3>2. Organize</h3><p>Group issues by category, urgency, location, who is affected, and what solution would create the fastest useful result.</p></article>
+        <article class="fundamental-card"><h3>3. Bring It Forward</h3><p>Take the strongest priorities to colleagues, community leaders, public offices, nonprofits, and partners who can help move the work.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <p><strong>Gregory R. Smith for Congress · We The People Voice</strong></p>
+  <p><a href="/speech.html">Campaign Speech</a> · <a href="/media.html">Newsroom</a> · <a href="/endorsement.html">Endorse</a> · <a href="/contribution.html">Contribute</a> · <a href="/contact.html">Contact</a></p>
+  <p class="small">Paid for by Gregory R. Smith for Congress. Public submissions are used to help identify campaign priorities.</p>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>
