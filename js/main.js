@@ -7,6 +7,18 @@
     document.head.appendChild(link);
   }
 
+  const emergencyCss = document.createElement('style');
+  emergencyCss.textContent = `
+    :root{--gold:#d7ad4a;--gold2:#ffe4a2;--navy:#061525;--red:#b82226}
+    .home-hero{background:linear-gradient(90deg,rgba(6,21,37,.97),rgba(6,21,37,.86) 45%,rgba(6,21,37,.55)),url('/assets/images/us-capitol-flag-bg.svg') center/cover no-repeat!important}
+    .poster-slot img[src$='.jpg'],.map-image-slot img[src$='.jpg']{display:none!important}
+    .poster-slot,.map-image-slot{background:linear-gradient(135deg,rgba(6,21,37,.30),rgba(6,21,37,.82)),url('/assets/images/us-capitol-flag-bg.svg') center/cover no-repeat!important}
+    .poster-frame,.map-frame,.text-panel,.event-card,.fight-card{border-color:rgba(255,228,162,.78)!important;box-shadow:0 18px 50px rgba(0,0,0,.38), inset 0 0 0 1px rgba(255,228,162,.12)!important}
+    .brand a,.menu a,.resource-tabs a,.gold-bubble,.hero-actions a,.quick-strip a,.resource-pill{background:linear-gradient(135deg,#8b6418,#d7ad4a 45%,#ffe4a2 72%,#9c741e)!important;color:#101010!important}
+    .hero-actions a.red{background:linear-gradient(135deg,#8f1117,#b82226,#ef5148)!important;color:#fff!important}
+  `;
+  document.head.appendChild(emergencyCss);
+
   const navShell = document.querySelector('.nav');
   const nav = document.querySelector('nav.menu');
   const brand = document.querySelector('.brand');
@@ -15,16 +27,49 @@
     brand.innerHTML = '<a href="/index.html" aria-label="Gregory R. Smith for Congress home"><span>Gregory R. Smith</span><small>For Congress · A Voice For The People</small></a>';
   }
 
+  const replaceText = (root) => {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => {
+      node.nodeValue = node.nodeValue
+        .replace(/Donate Today/g, 'Endorse Gregory')
+        .replace(/\bDonate\b/g, 'Endorse')
+        .replace(/\bDonations Welcome\b/g, 'Endorsements Welcome')
+        .replace(/\bContribution\b/g, 'Endorse')
+        .replace(/\bContribute\b/g, 'Endorse')
+        .replace(/\bPeople Vote\b/g, 'Pledge Center')
+        .replace(/\bVote Priorities\b/g, 'Pledge Priorities')
+        .replace(/Maui Live Feed/g, 'Campaign Media Center')
+        .replace(/Maui live-news/g, 'campaign media')
+        .replace(/Newsroom Live/g, 'Media Center');
+    });
+  };
+
+  replaceText(document.body);
+
+  document.querySelectorAll('a[href="/contribution.html"]').forEach((a) => {
+    a.href = '/endorsement.html';
+    a.textContent = a.textContent.replace(/Donate Today|Donate|Contribution|Contribute/g, 'Endorse');
+  });
+
+  document.querySelectorAll('img[src="/assets/images/the-peoples-voice.jpg"]').forEach((img) => { img.src = '/assets/images/the-peoples-voice.svg'; });
+  document.querySelectorAll('img[src="/assets/images/peoples-endorsement.jpg"]').forEach((img) => { img.src = '/assets/images/peoples-endorsement.svg'; });
+
   if (nav) {
     const items = [
       { href: '/index.html', label: 'Home', match: ['/', '/index.html'] },
-      { href: '/about.html', label: 'About', match: ['/about.html'] },
-      { href: '/speech.html', label: 'Movement', match: ['/speech.html'] },
+      { href: '/about.html', label: 'Meet Gregory', match: ['/about.html'] },
+      { href: '/speech.html', label: 'Speech', match: ['/speech.html'] },
+      { href: '/priorities.html', label: 'Platform', match: ['/priorities.html', '/issues.html'] },
+      { href: '/community-issues.html', label: 'National Issues', match: ['/community-issues.html'] },
+      { href: '/resources.html', label: 'Resources', match: ['/resources.html', '/education/'] },
+      { href: '/media.html', label: 'Media Center', match: ['/media.html'] },
       { href: '/tour/index.html', label: 'Events', match: ['/tour/', '/events.html'] },
-      { href: '/tour/index.html', label: 'Tour', match: ['/tour/index.html'] },
-      { href: '/priorities.html', label: 'Issues', match: ['/priorities.html', '/issues.html'] },
+      { href: '/people-vote.html', label: 'Pledge Center', match: ['/people-vote.html'] },
       { href: '/volunteer.html', label: 'Volunteer', match: ['/volunteer.html', '/get-involved.html'] },
-      { href: '/contribution.html', label: 'Donate', match: ['/contribution.html'] }
+      { href: '/endorsement.html', label: 'Endorse', match: ['/endorsement.html', '/contribution.html'] },
+      { href: '/contact.html', label: 'Contact', match: ['/contact.html'] }
     ];
 
     const current = location.pathname || '/';
