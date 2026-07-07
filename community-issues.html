@@ -11,7 +11,7 @@
     .issues-panel{max-width:980px;padding:30px;background:rgba(6,21,37,.82);border:1px solid rgba(255,255,255,.18);border-left:7px solid var(--gold);box-shadow:var(--shadow)}
     .issues-panel h1{margin:0 0 14px;color:#fff;text-transform:uppercase;font-size:clamp(2.45rem,6vw,5rem);line-height:.95}.issues-panel p{color:#dce9ff;line-height:1.7;font-size:1.08rem}
     .issues-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.8fr);gap:24px;align-items:start}.issue-form,.priority-card,.fundamental-card{padding:24px;background:rgba(16,43,85,.88);border:1px solid rgba(255,255,255,.17);border-top:5px solid var(--gold);box-shadow:0 14px 34px rgba(0,0,0,.24)}
-    .issue-form label{display:block;margin:0 0 14px;color:#fff;font-weight:900;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em}.issue-form input,.issue-form select,.issue-form textarea{width:100%;margin-top:7px;padding:12px;border:1px solid rgba(255,228,162,.55);border-radius:10px;background:#fff;color:#061525;font:inherit}.issue-form textarea{min-height:138px;resize:vertical}.issue-form small{display:block;margin-top:4px;color:#dce9ff;text-transform:none;font-weight:500;letter-spacing:0}.chart-list{display:grid;gap:12px;margin-top:14px}.chart-row{display:grid;grid-template-columns:150px 1fr 44px;gap:10px;align-items:center;color:#fff}.bar{height:18px;border-radius:999px;background:rgba(255,255,255,.15);overflow:hidden}.bar span{display:block;height:100%;background:linear-gradient(90deg,#d7ad4a,#ffe4a2)}.fundamentals{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.fundamental-card h3,.priority-card h2,.issue-form h2{margin:0 0 10px;color:#fff;text-transform:uppercase}.fundamental-card p,.priority-card p,.issue-form p{color:var(--muted);line-height:1.65}.notice-box{margin-top:18px;padding:16px;border-left:6px solid var(--gold);background:rgba(255,255,255,.08);color:#dce9ff;line-height:1.6}.btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}@media(max-width:900px){.issues-grid,.fundamentals{grid-template-columns:1fr}.chart-row{grid-template-columns:120px 1fr 38px}}
+    .issue-form label{display:block;margin:0 0 14px;color:#fff;font-weight:900;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em}.issue-form input,.issue-form select,.issue-form textarea{width:100%;margin-top:7px;padding:12px;border:1px solid rgba(255,228,162,.55);border-radius:10px;background:#fff;color:#061525;font:inherit}.issue-form textarea{min-height:138px;resize:vertical}.issue-form small{display:block;margin-top:4px;color:#dce9ff;text-transform:none;font-weight:500;letter-spacing:0}.chart-list{display:grid;gap:12px;margin-top:14px}.chart-row{display:grid;grid-template-columns:170px 1fr 44px;gap:10px;align-items:center;color:#fff}.bar{height:18px;border-radius:999px;background:rgba(255,255,255,.15);overflow:hidden}.bar span{display:block;height:100%;background:linear-gradient(90deg,#d7ad4a,#ffe4a2)}.fundamentals{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.fundamental-card h3,.priority-card h2,.issue-form h2{margin:0 0 10px;color:#fff;text-transform:uppercase}.fundamental-card p,.priority-card p,.issue-form p{color:var(--muted);line-height:1.65}.notice-box{margin-top:18px;padding:16px;border-left:6px solid var(--gold);background:rgba(255,255,255,.08);color:#dce9ff;line-height:1.6}.btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}@media(max-width:900px){.issues-grid,.fundamentals{grid-template-columns:1fr}.chart-row{grid-template-columns:130px 1fr 38px}}
   </style>
 </head>
 <body>
@@ -37,16 +37,35 @@
       <form class="issue-form" name="community-issues" method="post" data-netlify="true">
         <input type="hidden" name="form-name" value="community-issues">
         <h2>Tell Us What Needs Work</h2>
-        <p>Use this form to help build the issue map. Submissions help show what people want addressed first.</p>
+        <p>Pick the closest preset subject so the campaign can group the numbers. If it is not listed, choose Other and type the exact subject below.</p>
         <label>Name <small>Optional if you want to stay private.</small><input type="text" name="name" autocomplete="name"></label>
         <label>Email <small>Optional, only if the campaign may follow up.</small><input type="email" name="email" autocomplete="email"></label>
         <label>City / State <input type="text" name="location" placeholder="Example: Wailuku, HI"></label>
-        <label>Issue Category
+        <label>Issue Subject
           <select name="category" required>
-            <option value="">Choose one</option>
-            <option>Cost of living</option><option>Housing</option><option>Healthcare</option><option>Mental health and recovery</option><option>Jobs and wages</option><option>Education</option><option>Veterans and first responders</option><option>Public safety</option><option>Small business</option><option>Government accountability</option><option>Other</option>
+            <option value="">Choose the closest issue</option>
+            <optgroup label="Cost of Living & Economy">
+              <option>Cost of living</option><option>Groceries and food prices</option><option>Gas and transportation costs</option><option>Utilities and electric bills</option><option>Taxes and fees</option><option>Inflation</option><option>Retirement and Social Security</option>
+            </optgroup>
+            <optgroup label="Housing">
+              <option>Housing affordability</option><option>Rent increases</option><option>Homelessness</option><option>First-time home buying</option><option>Property taxes</option><option>Local development and zoning</option>
+            </optgroup>
+            <optgroup label="Work, Wages & Business">
+              <option>Jobs and wages</option><option>Trade jobs and apprenticeships</option><option>Small business support</option><option>Worker safety</option><option>Union and labor issues</option><option>Childcare affecting work</option>
+            </optgroup>
+            <optgroup label="Healthcare & Recovery">
+              <option>Healthcare access</option><option>Insurance costs</option><option>Prescription costs</option><option>Mental health resources</option><option>Addiction and recovery</option><option>Disability services</option><option>Senior care</option>
+            </optgroup>
+            <optgroup label="Families, Schools & Youth">
+              <option>Education</option><option>School safety</option><option>Youth opportunity</option><option>College and trade school costs</option><option>Financial literacy</option><option>Family court and parental rights</option>
+            </optgroup>
+            <optgroup label="Public Safety & Government">
+              <option>Public safety</option><option>Veterans and first responders</option><option>Government accountability</option><option>Corruption or waste</option><option>Immigration and border issues</option><option>Voting access and election trust</option><option>Infrastructure and roads</option><option>Environment and clean water</option>
+            </optgroup>
+            <option>Other — type subject below</option>
           </select>
         </label>
+        <label>Custom Subject <small>Use this when the exact issue is not listed above.</small><input type="text" name="custom_subject" placeholder="Example: Maui insurance crisis, wildfire recovery, veterans housing"></label>
         <label>Urgency
           <select name="urgency" required><option value="">Choose one</option><option>Immediate</option><option>High</option><option>Medium</option><option>Long-term</option></select>
         </label>
@@ -58,7 +77,7 @@
 
       <aside class="priority-card" id="priority-graph">
         <h2>Priority Graph</h2>
-        <p>Live storage can be connected next. Until then, this chart shows the structure the campaign will use to group public submissions.</p>
+        <p>Submissions are grouped by preset subject first, then reviewed for custom subjects when people choose Other.</p>
         <div class="chart-list" aria-label="Example community priority graph">
           <div class="chart-row"><strong>Cost of living</strong><div class="bar"><span style="width:92%"></span></div><span>42</span></div>
           <div class="chart-row"><strong>Healthcare</strong><div class="bar"><span style="width:77%"></span></div><span>35</span></div>
@@ -66,6 +85,7 @@
           <div class="chart-row"><strong>Jobs/Wages</strong><div class="bar"><span style="width:59%"></span></div><span>27</span></div>
           <div class="chart-row"><strong>Education</strong><div class="bar"><span style="width:42%"></span></div><span>19</span></div>
           <div class="chart-row"><strong>Safety</strong><div class="bar"><span style="width:31%"></span></div><span>14</span></div>
+          <div class="chart-row"><strong>Accountability</strong><div class="bar"><span style="width:26%"></span></div><span>12</span></div>
         </div>
         <div class="notice-box"><strong>Next build step:</strong> connect this form to a database, Google Sheet, or serverless endpoint so the graph updates from real public submissions.</div>
       </aside>
