@@ -3,46 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gregory R. Smith for Congress — We The People campaign homepage with the movement speech, community events, campaign tour map, issues, volunteer action, and public resources." />
-  <title>Gregory R. Smith for Congress | We The People</title>
+  <meta name="description" content="Gregory R. Smith for Congress — A Voice for the People. Official campaign homepage with pledge, volunteer, events, platform, media, and public resource paths." />
+  <title>Gregory R. Smith for Congress | A Voice for the People</title>
   <link rel="stylesheet" href="/css/style.css" />
   <style>
-    :root{--navy:#061525;--navy2:#09234a;--blue:#0b3775;--gold:#d7ad4a;--gold2:#ffe4a2;--cream:#fff8e7;--white:#fff;--soft:#dce9ff;--red:#b82226;--shadow:0 24px 70px rgba(0,0,0,.38)}
-    *{box-sizing:border-box}body.front-page{margin:0;background:radial-gradient(circle at 12% 8%,rgba(31,111,235,.32),transparent 28rem),radial-gradient(circle at 88% 15%,rgba(215,173,74,.16),transparent 28rem),linear-gradient(180deg,#061525,#09234a 46%,#0b3775);color:var(--cream);font-family:Arial,Helvetica,sans-serif}.wrap{width:min(1180px,calc(100% - 32px));margin:0 auto}
-    header{position:sticky;top:0;z-index:50;border-bottom:2px solid rgba(215,173,74,.62);background:rgba(6,21,37,.96);box-shadow:0 12px 32px rgba(0,0,0,.32);backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;width:min(1240px,calc(100% - 24px));margin:0 auto;padding:12px 0}.brand a,.menu a,.resource-tabs a,.gold-bubble,.hero-actions a{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,228,162,.86);border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;text-decoration:none;font-weight:950;letter-spacing:.04em;box-shadow:0 10px 24px rgba(215,173,74,.24);transition:.18s ease}.brand a{min-height:50px;padding:8px 16px;flex-direction:column;align-items:flex-start;white-space:nowrap;line-height:1.05}.brand small{font-size:.66rem;text-transform:uppercase;color:rgba(16,16,16,.75)}.menu{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.menu a{min-height:40px;padding:9px 12px;font-size:.78rem;text-transform:uppercase}.menu a[href*="contribution"]{background:linear-gradient(135deg,#b82226,#ee4f45);color:#fff}.brand a:hover,.menu a:hover,.resource-tabs a:hover,.hero-actions a:hover,.gold-bubble:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(215,173,74,.36)}
-    .resource-top{background:linear-gradient(135deg,#0b3775,#061525);border-bottom:3px solid var(--gold)}.resource-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:14px 0}.resource-tabs a{min-height:42px;padding:10px 14px;font-size:.78rem;text-transform:uppercase}
-    section{scroll-margin-top:150px}.home-hero{position:relative;overflow:hidden;border-bottom:4px double var(--gold);background:linear-gradient(90deg,rgba(6,21,37,.98),rgba(6,21,37,.88) 44%,rgba(6,21,37,.64)),url('/assets/images/chicago-launch.svg') center/cover no-repeat}.home-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 18%,rgba(255,228,162,.22),transparent 18rem);pointer-events:none}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(300px,.78fr);gap:34px;align-items:center;padding:64px 0 48px}.stars{color:var(--gold2);font-size:1.35rem;letter-spacing:.35em;margin-bottom:12px}.launch-kicker{display:inline-block;margin:0 0 16px;padding:9px 13px;border:1px solid rgba(255,255,255,.45);border-radius:999px;background:rgba(9,35,74,.72);color:var(--gold2);font:bold .8rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em}.campaign-title{margin:0;text-transform:uppercase;line-height:.9;letter-spacing:.01em;text-shadow:0 5px 0 rgba(0,0,0,.62),3px 3px 0 rgba(215,173,74,.35)}.candidate-name{display:block;font-size:clamp(2.1rem,5vw,4.6rem);color:#fff}.people-headline{display:block;margin-top:8px;font-size:clamp(3.1rem,7.8vw,7.3rem);color:var(--gold2);letter-spacing:-.055em}.office-line{display:block;margin:18px 0;color:var(--gold2);font-size:clamp(1.4rem,2.9vw,2.4rem);font-weight:1000;letter-spacing:.14em;text-transform:uppercase}.hero-copy{max-width:780px;font-size:clamp(1.05rem,1.65vw,1.22rem);line-height:1.72;color:#dce9ff}.mission-quote{max-width:780px;margin:22px 0;padding:18px 22px;border-left:7px solid var(--gold);background:rgba(6,21,37,.72);box-shadow:var(--shadow);font-size:clamp(1.25rem,2.25vw,1.8rem);font-weight:900;line-height:1.35}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.hero-actions a{min-height:46px;padding:12px 16px;text-transform:uppercase}.hero-actions a.secondary{background:rgba(255,255,255,.10);color:#fff}.hero-actions a.red{background:linear-gradient(135deg,#b82226,#ef5148);color:#fff}
-    .poster-frame,.map-frame{border:4px double var(--gold);background:rgba(6,21,37,.84);box-shadow:var(--shadow);overflow:hidden;border-radius:18px}.poster-slot{position:relative;min-height:320px;background:linear-gradient(135deg,#09234a,#061525);display:grid;place-items:center;text-align:center;padding:26px}.poster-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.poster-slot.image-missing img{display:none}.poster-text{position:relative;z-index:1}.poster-text strong{display:block;color:#fff;font-family:Georgia,serif;font-size:clamp(1.8rem,4vw,3.4rem);line-height:.96;text-transform:uppercase}.poster-text span{display:block;margin-top:12px;color:var(--gold2);font-weight:900;text-transform:uppercase;letter-spacing:.08em}.poster-frame figcaption,.map-frame figcaption{padding:14px 16px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;font-weight:950;text-align:center;text-transform:uppercase;letter-spacing:.08em}
-    .quick-strip{background:var(--navy);border-bottom:3px solid var(--gold)}.quick-strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:18px 0}.quick-strip a{padding:17px 18px;text-align:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;border-radius:999px;font-weight:950;text-transform:uppercase;text-decoration:none;letter-spacing:.055em;box-shadow:0 10px 24px rgba(215,173,74,.24)}
-    .live-news-home{background:linear-gradient(120deg,rgba(6,21,37,.94),rgba(9,35,74,.82)),url('/assets/images/maui-newsroom-backdrop.jpg') center/cover no-repeat}.live-news-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:26px;align-items:stretch}.live-news-card{position:relative;min-height:360px;border:4px double var(--gold);border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(7,31,55,.08),rgba(6,21,37,.84)),url('/assets/images/maui-newsroom-backdrop.jpg') center/cover no-repeat;box-shadow:var(--shadow)}.live-news-badge{position:absolute;top:18px;left:18px;display:inline-flex;gap:8px;align-items:center;padding:9px 12px;border-radius:999px;background:#b82226;color:#fff;font-weight:1000;text-transform:uppercase;letter-spacing:.08em}.live-news-badge span{width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.22)}.live-news-lower{position:absolute;left:22px;right:22px;bottom:22px;padding:16px 18px;background:rgba(6,21,37,.90);border-left:7px solid var(--gold);box-shadow:0 14px 34px rgba(0,0,0,.32)}.live-news-lower strong{display:block;color:#fff;font-size:1.35rem;text-transform:uppercase}.live-news-lower span{display:block;color:var(--gold2);font-weight:900;margin-top:4px}
-    .section-pad{padding:58px 0;border-bottom:4px double var(--gold)}.section-head{max-width:920px;margin:0 auto 30px;text-align:center}.section-head h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;color:#fff}.section-head p{margin:0;color:#dce9ff;font-size:1.08rem;line-height:1.7}.two-col{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(0,1.1fr);gap:28px;align-items:center}.text-panel{padding:28px;background:rgba(6,21,37,.76);border:1px solid rgba(255,255,255,.18);border-left:7px solid var(--gold);box-shadow:0 16px 40px rgba(0,0,0,.24);border-radius:18px}.text-panel h2,.text-panel h3{margin:0 0 12px;text-transform:uppercase;color:#fff;font-size:clamp(1.8rem,3.6vw,3rem);line-height:1}.text-panel p{color:#dce9ff;line-height:1.7;font-size:1.06rem}.values-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.value-mini{padding:16px;border:1px solid rgba(255,228,162,.32);border-radius:16px;background:rgba(255,255,255,.07);text-align:center}.value-mini strong{display:block;color:var(--gold2);text-transform:uppercase;margin-bottom:7px}.value-mini span{color:#dce9ff;font-size:.92rem;line-height:1.45}
-    .map-frame img{width:100%;display:block;background:#061525}.map-image-slot{min-height:420px;display:grid;place-items:center;background:linear-gradient(135deg,#061525,#0b3775);text-align:center;padding:28px}.map-image-slot.image-missing img{display:none}.map-fallback{max-width:720px}.map-fallback strong{display:block;color:#fff;font-family:Georgia,serif;font-size:clamp(2.2rem,5vw,4.5rem);line-height:1;text-transform:uppercase}.map-fallback span{display:block;margin-top:14px;color:var(--gold2);font-weight:950;text-transform:uppercase;letter-spacing:.08em}.city-links{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}.city-links a{padding:13px 10px;border:1px solid rgba(255,228,162,.45);border-radius:14px;background:rgba(255,255,255,.08);color:var(--gold2);text-align:center;text-decoration:none;font-weight:950;text-transform:uppercase}.city-links a:hover{background:var(--gold);color:#101010}
-    .speech-strip{display:grid;grid-template-columns:minmax(280px,.95fr) minmax(0,1.05fr);gap:24px;align-items:stretch}.parchment-card{padding:28px;border:6px double #7a4a22;border-radius:18px;background:linear-gradient(180deg,#f0d7a1,#d4ac69);color:#24170d;box-shadow:var(--shadow)}.parchment-card h2{font-family:Georgia,serif;text-transform:uppercase;font-size:clamp(2.1rem,4vw,3.5rem);line-height:1;margin:0 0 16px}.parchment-card p{font-family:Georgia,serif;font-size:1.08rem;line-height:1.65}.movement-card{border-radius:18px;overflow:hidden;background:linear-gradient(120deg,rgba(6,21,37,.9),rgba(9,35,74,.68)),url('/assets/images/campaign-road.svg') center/cover no-repeat;display:flex;align-items:center;padding:34px;border:1px solid rgba(255,228,162,.38);box-shadow:var(--shadow)}.movement-card h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2rem,4vw,3.2rem)}.movement-card p{line-height:1.7;color:#dce9ff}.movement-card .gold-bubble{width:max-content;margin-top:12px;padding:12px 18px}
-    .event-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.event-card{padding:22px;border:3px solid rgba(215,173,74,.65);border-radius:18px;background:linear-gradient(135deg,rgba(6,21,37,.92),rgba(11,55,117,.72));box-shadow:0 18px 40px rgba(0,0,0,.28);min-height:230px}.event-card h3{margin:0 0 10px;color:#fff;text-transform:uppercase;font-size:clamp(1.55rem,3vw,2.25rem)}.event-card p{color:#dce9ff;line-height:1.6}.event-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.event-meta span{padding:10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,228,162,.3);color:var(--gold2);font-weight:900;text-align:center}.event-card .gold-bubble{padding:11px 15px}.fight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fight-card{min-height:190px;padding:22px;border-radius:18px;border:1px solid rgba(255,228,162,.34);background:linear-gradient(135deg,rgba(6,21,37,.86),rgba(9,35,74,.72));box-shadow:0 16px 34px rgba(0,0,0,.24)}.fight-card strong{display:block;color:var(--gold2);text-transform:uppercase;font-size:1.15rem;line-height:1.25}.fight-card span{display:block;color:#dce9ff;margin-top:8px;line-height:1.55}.resource-callout{padding:58px 0;background:#efe2c5;color:#061525}.resource-card-clean{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:26px;align-items:center}.resource-card-clean h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2.1rem,4vw,3.4rem);line-height:1;color:#061525}.resource-card-clean p{line-height:1.7}.resource-preview{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.resource-pill{display:block;padding:15px;border:2px solid #9d7024;border-radius:999px;text-align:center;text-decoration:none;color:#061525;background:linear-gradient(145deg,#fff,#e4c785);font-weight:950;text-transform:uppercase;box-shadow:0 10px 22px rgba(0,0,0,.16)}.footer-contact{padding:38px 20px;text-align:center;border-top:4px solid var(--gold);background:#05101f;color:#f7e6bf}.footer-contact a{color:var(--gold2)}
-    @media(max-width:980px){.nav{display:grid;grid-template-columns:1fr}.menu{justify-content:center}.hero-grid,.two-col,.speech-strip,.resource-card-clean,.live-news-grid{grid-template-columns:1fr}.values-row,.fight-grid,.event-grid{grid-template-columns:1fr}.quick-strip .wrap,.city-links{grid-template-columns:1fr 1fr}.resource-preview{grid-template-columns:1fr 1fr}}
-    @media(max-width:640px){.candidate-name{font-size:2rem}.people-headline{font-size:3rem}.quick-strip .wrap,.city-links,.resource-preview{grid-template-columns:1fr}.map-image-slot{min-height:300px}.menu a{width:100%}}
+    :root{--navy:#061525;--blue:#0b3775;--gold:#d7ad4a;--gold2:#ffe4a2;--cream:#fff8e7;--soft:#dce9ff;--red:#b82226;--shadow:0 24px 70px rgba(0,0,0,.38)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body.front-page{margin:0;color:var(--cream);font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 12% 8%,rgba(31,111,235,.28),transparent 30rem),radial-gradient(circle at 88% 15%,rgba(215,173,74,.18),transparent 30rem),linear-gradient(180deg,#061525,#09234a 48%,#0b3775)}a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:0 auto}.site-header{position:sticky;top:0;z-index:60;background:rgba(6,21,37,.97);border-bottom:2px solid rgba(215,173,74,.62);box-shadow:0 12px 32px rgba(0,0,0,.32);backdrop-filter:blur(14px)}
+    .nav{width:min(1240px,calc(100% - 24px));margin:0 auto;min-height:72px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:10px 0}.brand-link{display:inline-flex;flex-direction:column;justify-content:center;min-height:50px;padding:8px 15px;border:1px solid rgba(255,228,162,.86);border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;text-decoration:none;font-weight:950;letter-spacing:.04em;line-height:1.05;white-space:nowrap;box-shadow:0 10px 24px rgba(215,173,74,.22)}.brand-link small{font-size:.66rem;text-transform:uppercase;color:rgba(16,16,16,.75)}.primary-menu{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px}.primary-menu a,.resource-tabs a,.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,228,162,.82);border-radius:999px;text-decoration:none;font-weight:950;text-transform:uppercase;letter-spacing:.045em;transition:.18s ease}.primary-menu a{min-height:38px;padding:8px 11px;background:rgba(255,255,255,.08);color:var(--cream);font-size:.74rem}.pledge-top,.btn.primary{background:linear-gradient(135deg,#b82226,#ef5148);color:#fff;box-shadow:0 12px 26px rgba(184,34,38,.28)}.pledge-top{min-height:42px;padding:10px 14px;font-size:.78rem;white-space:nowrap}.primary-menu a:hover,.resource-tabs a:hover,.btn:hover,.brand-link:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(215,173,74,.28)}
+    .resource-top{background:linear-gradient(135deg,#0b3775,#061525);border-bottom:3px solid var(--gold)}.resource-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:13px 0}.resource-tabs a{min-height:40px;padding:10px 13px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;font-size:.76rem;box-shadow:0 10px 22px rgba(0,0,0,.18)}.campaign-banner{background:linear-gradient(90deg,rgba(215,173,74,.96),rgba(255,228,162,.98),rgba(215,173,74,.96));color:#061525;border-bottom:4px double #061525;text-align:center}.campaign-banner .wrap{padding:18px 0 16px}.campaign-banner strong{display:block;text-transform:uppercase;letter-spacing:.07em;font-size:clamp(1.7rem,4.8vw,4.4rem);line-height:.95}.campaign-banner span{display:block;margin-top:7px;text-transform:uppercase;font-weight:950;letter-spacing:.19em;font-size:clamp(.78rem,1.5vw,1.05rem)}
+    section{scroll-margin-top:165px}.home-hero{position:relative;overflow:hidden;border-bottom:4px double var(--gold);background:linear-gradient(90deg,rgba(6,21,37,.98),rgba(6,21,37,.90) 48%,rgba(6,21,37,.66)),url('/assets/images/national-campaign-backdrop.svg') center/cover no-repeat}.home-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 18%,rgba(255,228,162,.22),transparent 18rem);pointer-events:none}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.03fr) minmax(320px,.82fr);gap:34px;align-items:center;padding:60px 0 50px}.stars{color:var(--gold2);font-size:1.35rem;letter-spacing:.35em;margin-bottom:12px}.kicker{display:inline-block;margin:0 0 16px;padding:9px 13px;border:1px solid rgba(255,255,255,.45);border-radius:999px;background:rgba(9,35,74,.72);color:var(--gold2);font:bold .8rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em}.campaign-title{margin:0;text-transform:uppercase;line-height:.9;letter-spacing:.01em;text-shadow:0 5px 0 rgba(0,0,0,.62),3px 3px 0 rgba(215,173,74,.35)}.candidate-name{display:block;font-size:clamp(2.05rem,5vw,4.8rem);color:#fff}.people-headline{display:block;margin-top:8px;font-size:clamp(3.1rem,7.8vw,7.4rem);color:var(--gold2);letter-spacing:-.055em}.office-line{display:block;margin:18px 0;color:var(--gold2);font-size:clamp(1.25rem,2.5vw,2.1rem);font-weight:1000;letter-spacing:.14em;text-transform:uppercase}.hero-copy{max-width:780px;font-size:clamp(1.05rem,1.65vw,1.22rem);line-height:1.72;color:var(--soft)}.mission-quote{max-width:780px;margin:22px 0;padding:18px 22px;border-left:7px solid var(--gold);background:rgba(6,21,37,.72);box-shadow:var(--shadow);font-size:clamp(1.25rem,2.25vw,1.8rem);font-weight:900;line-height:1.35}.hero-actions,.card-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.btn{min-height:46px;padding:12px 16px}.btn.secondary{background:rgba(255,255,255,.10);color:#fff}.btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010}
+    .endorsement-frame,.poster-frame,.map-frame,.video-frame{border:4px double var(--gold);background:rgba(6,21,37,.84);box-shadow:var(--shadow);overflow:hidden;border-radius:18px}.endorsement-slot{position:relative;min-height:520px;background:linear-gradient(135deg,#09234a,#061525);display:grid;place-items:center;text-align:center;padding:28px}.endorsement-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.endorsement-slot.image-missing img{display:none}.endorsement-overlay{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;padding:18px;background:rgba(6,21,37,.86);border-left:7px solid var(--gold);box-shadow:0 18px 38px rgba(0,0,0,.36);text-align:left}.endorsement-overlay strong{display:block;color:#fff;text-transform:uppercase;font-size:clamp(1.35rem,3vw,2.35rem);line-height:1}.endorsement-overlay span{display:block;margin-top:6px;color:var(--gold2);font-weight:950;text-transform:uppercase;letter-spacing:.07em}.endorsement-fallback{position:relative;z-index:1}.endorsement-fallback strong{display:block;color:#fff;font-family:Georgia,serif;text-transform:uppercase;font-size:clamp(2rem,5vw,4.3rem);line-height:.95}.endorsement-fallback span{display:block;margin-top:12px;color:var(--gold2);font-weight:950;text-transform:uppercase;letter-spacing:.08em}.endorsement-frame figcaption,.poster-frame figcaption,.map-frame figcaption,.video-frame figcaption{padding:14px 16px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;font-weight:950;text-align:center;text-transform:uppercase;letter-spacing:.08em}
+    .action-strip{background:#05101f;border-bottom:4px double var(--gold)}.action-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:14px;padding:18px 0}.action-card{display:block;padding:22px;border:2px solid rgba(255,228,162,.70);border-radius:18px;background:linear-gradient(135deg,rgba(215,173,74,.18),rgba(255,255,255,.06));text-decoration:none;box-shadow:0 15px 34px rgba(0,0,0,.24)}.action-card.primary{background:linear-gradient(135deg,#b82226,#ef5148);border-color:#ffd8d8}.action-card strong{display:block;color:#fff;text-transform:uppercase;font-size:1.15rem;letter-spacing:.07em}.action-card span{display:block;margin-top:7px;color:var(--soft);line-height:1.5}.action-card.primary span{color:#fff}
+    .section-pad{padding:58px 0;border-bottom:4px double var(--gold)}.section-head{max-width:920px;margin:0 auto 30px;text-align:center}.section-head h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;color:#fff}.section-head p{margin:0;color:var(--soft);font-size:1.08rem;line-height:1.7}.two-col{display:grid;grid-template-columns:minmax(280px,.92fr) minmax(0,1.08fr);gap:28px;align-items:center}.text-panel{padding:28px;background:rgba(6,21,37,.76);border:1px solid rgba(255,255,255,.18);border-left:7px solid var(--gold);box-shadow:0 16px 40px rgba(0,0,0,.24);border-radius:18px}.text-panel h2,.text-panel h3{margin:0 0 12px;text-transform:uppercase;color:#fff;font-size:clamp(1.8rem,3.6vw,3rem);line-height:1}.text-panel p{color:var(--soft);line-height:1.7;font-size:1.06rem}.values-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.value-mini{padding:16px;border:1px solid rgba(255,228,162,.32);border-radius:16px;background:rgba(255,255,255,.07);text-align:center}.value-mini strong{display:block;color:var(--gold2);text-transform:uppercase;margin-bottom:7px}.value-mini span{color:var(--soft);font-size:.92rem;line-height:1.45}
+    .video-message{background:linear-gradient(120deg,rgba(6,21,37,.95),rgba(9,35,74,.80)),url('/assets/images/national-campaign-backdrop.svg') center/cover no-repeat}.video-frame{min-height:350px;display:grid;place-items:center;text-align:center;padding:24px;background:linear-gradient(135deg,rgba(6,21,37,.86),rgba(11,55,117,.58))}.play-mark{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;font-size:2.2rem;font-weight:1000;box-shadow:0 15px 34px rgba(0,0,0,.32)}.video-frame strong{display:block;text-transform:uppercase;color:#fff;font-size:clamp(1.7rem,3.8vw,3.4rem);line-height:1}.video-frame span{display:block;margin-top:12px;color:var(--gold2);font-weight:900;text-transform:uppercase;letter-spacing:.08em}.speech-strip{display:grid;grid-template-columns:minmax(280px,.95fr) minmax(0,1.05fr);gap:24px;align-items:stretch}.parchment-card{padding:28px;border:6px double #7a4a22;border-radius:18px;background:linear-gradient(180deg,#f0d7a1,#d4ac69);color:#24170d;box-shadow:var(--shadow)}.parchment-card h2{font-family:Georgia,serif;text-transform:uppercase;font-size:clamp(2.1rem,4vw,3.5rem);line-height:1;margin:0 0 16px}.parchment-card p{font-family:Georgia,serif;font-size:1.08rem;line-height:1.65}.movement-card{border-radius:18px;overflow:hidden;background:linear-gradient(120deg,rgba(6,21,37,.9),rgba(9,35,74,.68)),url('/assets/images/national-campaign-backdrop.svg') center/cover no-repeat;display:flex;align-items:center;padding:34px;border:1px solid rgba(255,228,162,.38);box-shadow:var(--shadow)}.movement-card h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2rem,4vw,3.2rem)}.movement-card p{line-height:1.7;color:var(--soft)}
+    .event-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.event-card{padding:24px;border:3px solid rgba(215,173,74,.65);border-radius:18px;background:linear-gradient(135deg,rgba(6,21,37,.92),rgba(11,55,117,.72));box-shadow:0 18px 40px rgba(0,0,0,.28);min-height:230px}.event-card h3{margin:0 0 10px;color:#fff;text-transform:uppercase;font-size:clamp(1.55rem,3vw,2.25rem)}.event-card p{color:var(--soft);line-height:1.6}.event-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.event-meta span{padding:10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,228,162,.3);color:var(--gold2);font-weight:900;text-align:center}.fight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fight-card{min-height:190px;padding:22px;border-radius:18px;border:1px solid rgba(255,228,162,.34);background:linear-gradient(135deg,rgba(6,21,37,.86),rgba(9,35,74,.72));box-shadow:0 16px 34px rgba(0,0,0,.24)}.fight-card strong{display:block;color:var(--gold2);text-transform:uppercase;font-size:1.15rem;line-height:1.25}.fight-card span{display:block;color:var(--soft);margin-top:8px;line-height:1.55}.resource-callout{padding:58px 0;background:#efe2c5;color:#061525}.resource-card-clean{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:26px;align-items:center}.resource-card-clean h2{margin:0 0 12px;text-transform:uppercase;font-size:clamp(2.1rem,4vw,3.4rem);line-height:1;color:#061525}.resource-card-clean p{line-height:1.7}.resource-preview{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.resource-pill{display:block;padding:15px;border:2px solid #9d7024;border-radius:999px;text-align:center;text-decoration:none;color:#061525;background:linear-gradient(145deg,#fff,#e4c785);font-weight:950;text-transform:uppercase;box-shadow:0 10px 22px rgba(0,0,0,.16)}.footer-contact{padding:38px 20px;text-align:center;border-top:4px solid var(--gold);background:#05101f;color:#f7e6bf}.footer-contact a{color:var(--gold2)}
+    @media(max-width:1080px){.nav{grid-template-columns:1fr}.primary-menu{justify-content:center}.pledge-top{justify-self:center}.hero-grid,.two-col,.speech-strip,.resource-card-clean{grid-template-columns:1fr}.values-row,.fight-grid,.event-grid,.action-grid{grid-template-columns:1fr}.campaign-banner strong{font-size:clamp(2rem,7vw,4rem)}.endorsement-slot{min-height:460px}}
+    @media(max-width:640px){.wrap{width:min(100% - 22px,1180px)}.brand-link{width:100%;align-items:center}.primary-menu a,.pledge-top,.resource-tabs a,.btn{width:100%}.resource-tabs{gap:8px}.candidate-name{font-size:2.05rem}.people-headline{font-size:3.1rem}.hero-grid{padding:42px 0}.endorsement-slot{min-height:380px}.resource-preview{grid-template-columns:1fr}.event-meta{grid-template-columns:1fr}}
   </style>
 </head>
 <body class="front-page">
-  <header>
+  <header class="site-header">
     <div class="nav">
-      <div class="brand"><a href="/index.html"><span>Gregory R. Smith</span><small>For Congress · We The People Voice</small></a></div>
-      <nav class="menu" aria-label="Primary navigation">
+      <a class="brand-link" href="/index.html"><span>Gregory R. Smith</span><small>For Congress · We The People</small></a>
+      <nav class="primary-menu" aria-label="Primary navigation">
         <a href="/index.html" aria-current="page">Home</a>
-        <a href="/tour/index.html">Tour</a>
-        <a href="/echo-wall.html">Echo Wall</a>
-        <a href="/volunteer.html">Get Involved</a>
-        <a href="/education/index.html">Education</a>
         <a href="/about.html">Meet Gregory</a>
         <a href="/priorities.html">Platform</a>
-        <a href="/media.html#maui-live">Newsroom</a>
+        <a href="/speech.html">Speech</a>
+        <a href="/tour/index.html">Events</a>
+        <a href="/media.html">Media</a>
+        <a href="/resources.html">Resources</a>
         <a href="/contact.html">Contact</a>
-        <a href="/contribution.html">Donate</a>
       </nav>
+      <a class="pledge-top" href="/contribution.html">Pledge Support</a>
     </div>
   </header>
 
-  <div class="resource-top" aria-label="Resource navigation">
+  <div class="resource-top" aria-label="Public resource navigation">
     <div class="wrap resource-tabs">
       <a href="/resources.html#education">Education</a>
       <a href="/resources.html#jobs">Jobs & Trades</a>
@@ -55,107 +52,98 @@
     </div>
   </div>
 
+  <div class="campaign-banner" aria-label="Campaign title banner">
+    <div class="wrap">
+      <strong>Gregory R. Smith for Congress</strong>
+      <span>A Voice for the People</span>
+    </div>
+  </div>
+
   <main>
     <section class="home-hero">
       <div class="wrap hero-grid">
         <div>
           <div class="stars" aria-hidden="true">★★★★★</div>
-          <p class="launch-kicker">We The People Movement · People Over Parties</p>
+          <p class="kicker">We The People Movement · People Over Parties</p>
           <h1 class="campaign-title"><span class="candidate-name">Gregory R. Smith</span><span class="people-headline">A Voice For The People</span></h1>
-          <div class="office-line">For Congress</div>
+          <div class="office-line">Write-In Candidate · U.S. Congress</div>
           <p class="hero-copy">Working-class leadership. Public accountability. One nation. One voice. This campaign is built around listening first, serving the people, and carrying everyday concerns forward.</p>
           <blockquote class="mission-quote">“I don’t speak for you. I listen to you. You speak. We act.”</blockquote>
           <div class="hero-actions">
-            <a class="red" href="/volunteer.html">Get Involved</a>
-            <a href="/contribution.html">Donate Today</a>
-            <a class="secondary" href="/speech.html">Read The Speech</a>
-            <a class="secondary" href="/media.html#maui-live">Newsroom Live</a>
-            <a class="secondary" href="/tour/index.html">Find A City</a>
+            <a class="btn primary" href="/contribution.html">Pledge Support</a>
+            <a class="btn gold" href="/volunteer.html">Volunteer</a>
+            <a class="btn secondary" href="/speech.html">Read The Speech</a>
+            <a class="btn secondary" href="/priorities.html">View The Platform</a>
           </div>
         </div>
-        <figure class="poster-frame" aria-label="Gregory R. Smith campaign portrait area">
-          <div class="poster-slot" data-fallback="Candidate image ready">
-            <img src="/assets/images/the-peoples-voice.jpg" alt="The People’s Voice poster for Gregory R. Smith" onerror="this.parentElement.classList.add('image-missing');this.remove();" />
-            <div class="poster-text"><strong>The People’s Voice</strong><span>Recognizing Gregory R. Smith as a voice for working Americans</span></div>
+        <figure class="endorsement-frame" aria-label="The People's Endorsement campaign image">
+          <div class="endorsement-slot">
+            <img src="/assets/images/peoples-endorsement.jpg" alt="The People’s Endorsement poster for Gregory R. Smith" onerror="this.parentElement.classList.add('image-missing');this.remove();" />
+            <div class="endorsement-fallback"><strong>The People’s Endorsement</strong><span>Gregory R. Smith · For Congress</span></div>
+            <div class="endorsement-overlay"><strong>The People’s Endorsement</strong><span>Core values. Working-class leadership. Public accountability.</span></div>
           </div>
-          <figcaption>People First · Accountability First</figcaption>
+          <figcaption>People First · Accountability First · United We Stand</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="quick-strip" aria-label="Campaign focus areas">
-      <div class="wrap">
-        <a href="/speech.html">Movement Speech</a>
-        <a href="/tour/index.html">Community Events</a>
-        <a href="/priorities.html">Platform Issues</a>
-        <a href="/volunteer.html">Volunteer</a>
+    <section class="action-strip" aria-label="Priority campaign actions">
+      <div class="wrap action-grid">
+        <a class="action-card primary" href="/contribution.html"><strong>Pledge Center</strong><span>Support the campaign and help carry the people-first message forward.</span></a>
+        <a class="action-card" href="/volunteer.html"><strong>Volunteer</strong><span>Join events, outreach, calls, local support, and community organizing.</span></a>
+        <a class="action-card" href="/contact.html"><strong>Contact Campaign</strong><span>Reach out with questions, media requests, community concerns, or partnership ideas.</span></a>
       </div>
     </section>
 
-    <section class="section-pad live-news-home" id="newsroom-live">
-      <div class="wrap live-news-grid">
-        <div class="text-panel">
-          <p class="launch-kicker">Newsroom · Maui Live Feed</p>
-          <h2>Campaign coverage that feels like real local news.</h2>
-          <p>The newsroom segment is now linked from the homepage so visitors, supporters, and media can open the Maui live-news setup without hunting for it.</p>
-          <p>Use this section for the interview look, the lower-third candidate graphic, and the reporter-style question flow that keeps the focus on Gregory and the people-first message.</p>
-          <div class="hero-actions"><a href="/media.html#maui-live">Open Newsroom Live</a><a class="secondary" href="/media.html">Media Room</a></div>
+    <section class="section-pad" id="core-values">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Core Values</h2>
+          <p>The front page starts with the standard voters should judge: character, service, accountability, and a working-class voice that is not afraid to speak plainly.</p>
         </div>
-        <a class="live-news-card" href="/media.html#maui-live" aria-label="Open the Maui live-news campaign segment">
-          <div class="live-news-badge"><span aria-hidden="true"></span>Live · Maui</div>
-          <div class="live-news-lower"><strong>Gregory R. Smith</strong><span>Write-In Candidate · We The People Voice</span></div>
+        <div class="values-row">
+          <div class="value-mini"><strong>Unity</strong><span>One nation. One voice. People over parties.</span></div>
+          <div class="value-mini"><strong>Integrity</strong><span>Truth before politics and public service before ego.</span></div>
+          <div class="value-mini"><strong>Accountability</strong><span>Government should answer to the people it serves.</span></div>
+          <div class="value-mini"><strong>Opportunity</strong><span>Jobs, trades, education, housing, and real paths forward.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad video-message" id="campaign-videos">
+      <div class="wrap two-col">
+        <div class="text-panel">
+          <p class="kicker">Campaign Message Videos</p>
+          <h2>Hear directly from Gregory.</h2>
+          <p>This section keeps video on the homepage without turning the front page into a production room. Full media, recordings, and press materials live on the media page.</p>
+          <div class="card-actions"><a class="btn primary" href="/media.html">Open Media Page</a><a class="btn secondary" href="/contact.html">Request Interview</a></div>
+        </div>
+        <a class="video-frame" href="/media.html" aria-label="Open campaign media and videos">
+          <div>
+            <div class="play-mark">▶</div>
+            <strong>Campaign Videos</strong>
+            <span>Statements · Interviews · Updates</span>
+          </div>
         </a>
       </div>
     </section>
 
-    <section class="section-pad" id="campaign-map">
+    <section class="section-pad" id="events">
       <div class="wrap">
-        <div class="section-head">
-          <h2>Community Block Party Tour Map</h2>
-          <p>One conversation. One community. One movement. The tour map gives supporters a fast way to find the city stops and follow the campaign across the country.</p>
-        </div>
-        <figure class="map-frame">
-          <div class="map-image-slot">
-            <img src="/assets/images/campaign-map.jpg" alt="We The People Community Block Party Tour map showing campaign city stops" onerror="this.parentElement.classList.add('image-missing');this.remove();" />
-            <div class="map-fallback"><strong>Campaign Map Ready</strong><span>Upload the map image as /assets/images/campaign-map.jpg</span></div>
-          </div>
-          <figcaption>10 Cities · 1 Mission · Countless Voices</figcaption>
-        </figure>
-        <div class="city-links" aria-label="Campaign city quick links">
-          <a href="/tour/chicago.html">Chicago</a>
-          <a href="/tour/new-york.html">New York</a>
-          <a href="/tour/atlanta.html">Atlanta</a>
-          <a href="/tour/dallas.html">Dallas</a>
-          <a href="/tour/denver.html">Denver</a>
-          <a href="/tour/seattle.html">Seattle</a>
-          <a href="/tour/portland.html">Portland</a>
-          <a href="/tour/los-angeles.html">Los Angeles</a>
-          <a href="/tour/maui.html">Maui</a>
-          <a href="/tour/washington-dc.html">Washington DC</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="about">
-      <div class="wrap two-col">
-        <figure class="poster-frame">
-          <div class="poster-slot">
-            <img src="/assets/images/peoples-endorsement.jpg" alt="The People’s Endorsement campaign poster" onerror="this.parentElement.classList.add('image-missing');this.remove();" />
-            <div class="poster-text"><strong>The People’s Endorsement</strong><span>Gregory R. Smith · For Congress</span></div>
-          </div>
-          <figcaption>Working-Class Leadership · Public Accountability</figcaption>
-        </figure>
-        <div class="text-panel">
-          <p class="launch-kicker">About Gregory</p>
-          <h2>Built from real work. Focused on real people.</h2>
-          <p>Gregory R. Smith is building a campaign around working people, clear communication, public accountability, and useful resources families can actually use.</p>
-          <div class="values-row">
-            <div class="value-mini"><strong>Beliefs</strong><span>People before party. Truth before politics.</span></div>
-            <div class="value-mini"><strong>Vision</strong><span>A government that listens, works, and answers.</span></div>
-            <div class="value-mini"><strong>Mission</strong><span>Carry working voices forward with honesty and action.</span></div>
-            <div class="value-mini"><strong>Values</strong><span>Unity, integrity, accountability, service, opportunity.</span></div>
-          </div>
-          <div class="hero-actions"><a href="/about.html">Meet Gregory</a><a class="secondary" href="/endorsement.html">Endorse</a></div>
+        <div class="section-head"><h2>Community Events</h2><p>Open conversations for neighbors, workers, families, veterans, first responders, local leaders, nonprofits, educators, small business owners, and community members.</p></div>
+        <div class="event-grid">
+          <article class="event-card">
+            <h3>We The People Community Block Party</h3>
+            <p>This is about people. Bring your ideas, concerns, and local priorities so the campaign can listen, organize, and respond.</p>
+            <div class="event-meta"><span>Potluck Style</span><span>Donations Welcome</span></div>
+            <a class="btn gold" href="/tour/index.html">View Events</a>
+          </article>
+          <article class="event-card">
+            <h3>Public Discussion Forum</h3>
+            <p>Real people. Real issues. Real solutions. Speak up, be heard, and help turn community priorities into action.</p>
+            <div class="event-meta"><span>Speak Up</span><span>Be Heard</span></div>
+            <a class="btn gold" href="/people-vote.html">Vote Priorities</a>
+          </article>
         </div>
       </div>
     </section>
@@ -169,31 +157,11 @@
         </div>
         <div class="movement-card">
           <div>
-            <p class="launch-kicker">Our Movement</p>
-            <h2>One speech. One message. One people-powered movement.</h2>
+            <p class="kicker">The Movement</p>
+            <h2>One speech. One message. One people-powered campaign.</h2>
             <p>The full campaign speech lives on its own page so voters, supporters, and media can open it directly without digging through the homepage.</p>
-            <a class="gold-bubble" href="/speech.html">Read The Speech</a>
+            <a class="btn gold" href="/speech.html">Read The Speech</a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="events">
-      <div class="wrap">
-        <div class="section-head"><h2>Community Events</h2><p>Open conversations for neighbors, workers, families, veterans, first responders, local leaders, nonprofits, educators, small business owners, and community members.</p></div>
-        <div class="event-grid">
-          <article class="event-card">
-            <h3>We The People Community Block Party</h3>
-            <p>This is not about political parties. This is about people. Bring a dish, bring your ideas, bring your concerns, and help shape solutions.</p>
-            <div class="event-meta"><span>Potluck Style</span><span>Donations Welcome</span></div>
-            <a class="gold-bubble" href="/tour/index.html">View Events</a>
-          </article>
-          <article class="event-card">
-            <h3>Public Discussion Forum</h3>
-            <p>Real people. Real issues. Real solutions. Come out, speak up, be heard, and help turn community priorities into action.</p>
-            <div class="event-meta"><span>Speak Up</span><span>Be Heard</span></div>
-            <a class="gold-bubble" href="/people-vote.html">Vote Priorities</a>
-          </article>
         </div>
       </div>
     </section>
@@ -204,7 +172,7 @@
         <div class="fight-grid">
           <div class="fight-card"><strong>Working Families & Trades</strong><span>Jobs, wages, cost of living, housing, small business, and infrastructure.</span></div>
           <div class="fight-card"><strong>Veterans & First Responders</strong><span>Honor, service, unity, public safety, benefits, and community support.</span></div>
-          <div class="fight-card"><strong>Families & Neighborhoods</strong><span>Education, mental health, opportunity, family resources, and practical help.</span></div>
+          <div class="fight-card"><strong>Families & Neighborhoods</strong><span>Education, mental health, healthcare, opportunity, and practical help.</span></div>
         </div>
       </div>
     </section>
@@ -213,25 +181,23 @@
       <div class="wrap resource-card-clean">
         <div>
           <h2>Public Resource Directory</h2>
-          <p>Quick access to campaign information, public issues, contact options, volunteer action, and resources meant to benefit the whole family.</p>
-          <a class="resource-pill" href="/resources.html">Explore All Resources</a>
+          <p>Quick access to public issue pages and resources meant to benefit working families, veterans, students, small businesses, and people looking for help.</p>
+          <a class="resource-pill" href="/resources.html">Open Resource Directory</a>
         </div>
         <div class="resource-preview" aria-label="Featured resource categories">
-          <a class="resource-pill" href="/priorities.html">Platform</a>
-          <a class="resource-pill" href="/contact.html">Contact</a>
-          <a class="resource-pill" href="/volunteer.html">Volunteer</a>
-          <a class="resource-pill" href="/resources.html">Resources</a>
+          <a class="resource-pill" href="/resources.html#education">Education</a>
+          <a class="resource-pill" href="/resources.html#jobs">Jobs & Trades</a>
+          <a class="resource-pill" href="/resources.html#housing">Housing</a>
           <a class="resource-pill" href="/mental-health.html">Mental Health</a>
-          <a class="resource-pill" href="/endorsement.html">Endorse</a>
-          <a class="resource-pill" href="/contribution.html">Contribution</a>
-          <a class="resource-pill" href="/people-vote.html">People Vote</a>
+          <a class="resource-pill" href="/resources.html#benefits">Benefits</a>
+          <a class="resource-pill" href="/resources.html#healthcare">Healthcare</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer-contact">
-    <p><strong>Gregory R. Smith for Congress · We The People Voice</strong></p>
+    <p><strong>Gregory R. Smith for Congress · We The People</strong></p>
     <p>Website: <a href="https://gregoryrsmithforcongress.wethepeoplesvoice.workers.dev">gregoryrsmithforcongress.wethepeoplesvoice.workers.dev</a></p>
     <p>Email: <a href="mailto:gregoryrsmithforcongress@gmail.com">gregoryrsmithforcongress@gmail.com</a> · Phone: <a href="tel:+14012169452">+1 (401) 216-9452</a></p>
     <p>Public campaign information and educational resources. Paid for by Gregory R. Smith for Congress.</p>
