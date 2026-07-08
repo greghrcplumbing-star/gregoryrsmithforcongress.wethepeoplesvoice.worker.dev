@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gregory R. Smith campaign newsroom, Maui live coverage look, press releases, media contact, statements, approved public campaign materials, and community issue updates.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gregory R. Smith campaign newsroom, Maui live interview video, press releases, media contact, statements, approved public campaign materials, and community issue updates." />
   <title>Newsroom | Gregory R. Smith for Congress</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css" />
   <style>
-    .news-hero{padding:78px 0 56px;background:linear-gradient(120deg,rgba(6,21,37,.96),rgba(9,35,74,.84)),url('/assets/images/campaign-road.svg') center/cover no-repeat;border-bottom:4px double var(--gold)}
-    .news-hero-panel{max-width:920px;padding:30px;background:rgba(6,21,37,.78);border:1px solid rgba(255,255,255,.18);border-left:7px solid var(--gold);box-shadow:var(--shadow)}
-    .news-hero-panel h1{margin:0 0 14px;color:#fff;text-transform:uppercase;font-size:clamp(2.5rem,6vw,5rem);line-height:.95}.news-hero-panel p{color:#dce9ff;line-height:1.7;font-size:1.08rem}
-    .news-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}.news-card,.release-card,.podium-card,.broadcast-card{padding:24px;background:rgba(16,43,85,.88);border:1px solid rgba(255,255,255,.17);border-top:5px solid var(--gold);box-shadow:0 14px 34px rgba(0,0,0,.24)}
-    .news-card h2,.news-card h3,.release-card h2,.release-card h3,.podium-card h2,.podium-card h3,.broadcast-card h2,.broadcast-card h3{margin:0 0 10px;color:#fff;text-transform:uppercase}.news-card p,.release-card p,.podium-card p,.broadcast-card p,.news-card li{color:var(--muted);line-height:1.65}.release-list{display:grid;gap:16px}.release-card time{display:block;color:var(--gold2);font-weight:900;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}.press-template{white-space:pre-wrap;padding:20px;border:3px double var(--gold);background:rgba(6,21,37,.72);color:#dce9ff;line-height:1.55}.media-tools{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.media-tools article{padding:20px;border-left:6px solid var(--gold);background:rgba(255,255,255,.07)}.media-tools h3{margin:0 0 8px;color:var(--gold2);text-transform:uppercase}.media-tools p{margin:0;color:var(--muted)}
-    .visual-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.visual-card{overflow:hidden;border:3px double var(--gold);background:#061525;box-shadow:0 14px 34px rgba(0,0,0,.25)}.visual-card img{width:100%;height:210px;object-fit:cover;display:block}.visual-card div{padding:14px;background:linear-gradient(135deg,#d7ad4a,#ffe4a2);color:#101010;font-weight:950;text-transform:uppercase;text-align:center}
-    .broadcast-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:stretch}.live-stage{position:relative;min-height:420px;border:4px double var(--gold);overflow:hidden;border-radius:22px;background:linear-gradient(180deg,rgba(7,31,55,.08),rgba(6,21,37,.84)),url('/assets/images/maui-newsroom-backdrop.jpg') center/cover no-repeat;box-shadow:0 24px 70px rgba(0,0,0,.38)}.live-stage:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,21,37,.50),rgba(6,21,37,.10) 45%,rgba(6,21,37,.58));pointer-events:none}.live-badge{position:absolute;top:18px;left:18px;display:inline-flex;gap:8px;align-items:center;padding:9px 12px;border-radius:999px;background:#b82226;color:#fff;font-weight:1000;text-transform:uppercase;letter-spacing:.08em}.live-badge span{width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.22)}.station-bug{position:absolute;top:18px;right:18px;padding:10px 13px;border-radius:12px;background:rgba(6,21,37,.86);border:1px solid rgba(255,228,162,.65);color:var(--gold2);font-weight:1000;text-transform:uppercase}.interview-lower{position:absolute;left:22px;right:22px;bottom:22px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}.lower-text{padding:16px 18px;background:rgba(6,21,37,.90);border-left:7px solid var(--gold);box-shadow:0 14px 34px rgba(0,0,0,.32)}.lower-text strong{display:block;color:#fff;font-size:1.35rem;text-transform:uppercase}.lower-text span{display:block;color:var(--gold2);font-weight:900;margin-top:4px}.mic-card{padding:14px 16px;border-radius:16px;background:linear-gradient(135deg,#d7ad4a,#ffe4a2);color:#101010;font-weight:1000;text-transform:uppercase;text-align:center}.broadcast-card ul{margin:12px 0 0;padding-left:20px;color:var(--muted);line-height:1.65}.question-list{display:grid;gap:10px;margin-top:14px}.question-list div{padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,228,162,.30);color:#dce9ff}.question-list strong{color:var(--gold2)}
-    @media(max-width:900px){.news-grid,.media-tools,.visual-grid,.broadcast-wrap{grid-template-columns:1fr}.interview-lower{grid-template-columns:1fr}.live-stage{min-height:360px}}
+    :root{--navy:#061525;--navy2:#09234a;--blue:#0b3775;--gold:#d7ad4a;--gold2:#ffe4a2;--cream:#fff8e7;--soft:#dce9ff;--red:#b82226;--shadow:0 24px 70px rgba(0,0,0,.38)}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#061525,#09234a 48%,#061525);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+    .wrap{width:min(1180px,calc(100% - 32px));margin:0 auto}
+    header{position:sticky;top:0;z-index:50;background:rgba(6,21,37,.96);border-bottom:2px solid var(--gold);box-shadow:0 12px 32px rgba(0,0,0,.32)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;width:min(1240px,calc(100% - 24px));margin:0 auto;padding:12px 0}.brand a,.menu a,.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,228,162,.86);border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#101010;text-decoration:none;font-weight:950;letter-spacing:.04em;box-shadow:0 10px 24px rgba(215,173,74,.24)}.brand a{min-height:50px;padding:8px 16px;flex-direction:column;align-items:flex-start;white-space:nowrap}.brand small{font-size:.66rem;text-transform:uppercase;color:rgba(16,16,16,.75)}.menu{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.menu a{min-height:40px;padding:9px 12px;font-size:.78rem;text-transform:uppercase}.menu a[href*="contribution"]{background:linear-gradient(135deg,#b82226,#ee4f45);color:#fff}.btn{min-height:44px;padding:11px 16px;text-transform:uppercase}.btn.light{background:rgba(255,255,255,.1);color:#fff}.btn.red{background:linear-gradient(135deg,#b82226,#ef5148);color:#fff}
+    .news-hero{padding:64px 0 44px;background:linear-gradient(120deg,rgba(6,21,37,.92),rgba(9,35,74,.78)),url('/assets/images/maui-boardwalk-video-bg.svg') center/cover no-repeat;border-bottom:4px double var(--gold)}.news-hero-panel{max-width:960px;padding:28px;background:rgba(6,21,37,.78);border:1px solid rgba(255,255,255,.18);border-left:7px solid var(--gold);box-shadow:var(--shadow);border-radius:18px}.eyebrow{margin:0 0 10px;color:var(--gold2);font-weight:1000;text-transform:uppercase;letter-spacing:.11em}.news-hero-panel h1,.section-title{margin:0 0 14px;color:#fff;text-transform:uppercase;font-size:clamp(2.3rem,5.8vw,5rem);line-height:.95}.news-hero-panel p,.card p,.card li{color:#dce9ff;line-height:1.7;font-size:1.06rem}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .section{padding:48px 0;border-bottom:4px double rgba(215,173,74,.68)}.section-dark{background:linear-gradient(180deg,rgba(6,21,37,.55),rgba(9,35,74,.78))}.broadcast-wrap{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(300px,.82fr);gap:24px;align-items:stretch}.video-stage{position:relative;min-height:620px;border:4px double var(--gold);border-radius:24px;overflow:hidden;background:linear-gradient(180deg,rgba(7,31,55,.04),rgba(6,21,37,.48)),url('/assets/images/maui-boardwalk-video-bg.svg') center/cover no-repeat;box-shadow:var(--shadow)}.video-stage:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,21,37,.28),rgba(6,21,37,.02) 52%,rgba(6,21,37,.36));pointer-events:none}.video-shell{position:absolute;left:50%;bottom:86px;transform:translateX(-50%);width:min(430px,72vw);aspect-ratio:9/16;border-radius:24px;overflow:hidden;background:rgba(6,21,37,.62);border:3px solid rgba(255,228,162,.72);box-shadow:0 26px 70px rgba(0,0,0,.58)}.video-shell video{width:100%;height:100%;display:block;object-fit:cover;background:#061525}.live-badge{position:absolute;top:18px;left:18px;z-index:3;display:inline-flex;gap:8px;align-items:center;padding:9px 12px;border-radius:999px;background:#b82226;color:#fff;font-weight:1000;text-transform:uppercase;letter-spacing:.08em}.live-badge span{width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.22)}.station-bug{position:absolute;top:18px;right:18px;z-index:3;padding:10px 13px;border-radius:12px;background:rgba(6,21,37,.86);border:1px solid rgba(255,228,162,.65);color:var(--gold2);font-weight:1000;text-transform:uppercase}.interview-lower{position:absolute;left:22px;right:22px;bottom:22px;z-index:4;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}.lower-text{padding:16px 18px;background:rgba(6,21,37,.92);border-left:7px solid var(--gold);box-shadow:0 14px 34px rgba(0,0,0,.32)}.lower-text strong{display:block;color:#fff;font-size:1.35rem;text-transform:uppercase}.lower-text span{display:block;color:var(--gold2);font-weight:900;margin-top:4px}.mic-card{padding:14px 16px;border-radius:16px;background:linear-gradient(135deg,#d7ad4a,#ffe4a2);color:#101010;font-weight:1000;text-transform:uppercase;text-align:center}.card{padding:24px;background:rgba(16,43,85,.88);border:1px solid rgba(255,255,255,.17);border-top:5px solid var(--gold);border-radius:18px;box-shadow:0 14px 34px rgba(0,0,0,.24)}.card h2,.card h3{margin:0 0 10px;color:#fff;text-transform:uppercase}.question-list{display:grid;gap:10px;margin-top:14px}.question-list div{padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,228,162,.30);color:#dce9ff}.question-list strong{color:var(--gold2)}.release-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.press-template{white-space:pre-wrap;padding:20px;border:3px double var(--gold);background:rgba(6,21,37,.72);color:#dce9ff;line-height:1.55;border-radius:18px}.footer{padding:34px 20px;text-align:center;border-top:4px solid var(--gold);background:#05101f;color:#f7e6bf}.footer a{color:var(--gold2)}.small{font-size:.9rem;opacity:.84}
+    @media(max-width:900px){.nav{flex-direction:column}.menu{justify-content:center}.menu a{width:calc(50% - 6px)}.broadcast-wrap,.release-grid{grid-template-columns:1fr}.video-stage{min-height:560px}.interview-lower{grid-template-columns:1fr}.station-bug{top:64px;left:18px;right:auto}.video-shell{width:min(390px,76vw);bottom:108px}}
   </style>
 </head>
 <body>
@@ -27,34 +28,40 @@
 <main>
   <section class="news-hero">
     <div class="wrap news-hero-panel">
-      <p class="eyebrow">Campaign Newsroom · Press Releases · Public Statements</p>
+      <p class="eyebrow">Maui Live Feed · Campaign Video</p>
       <h1>Media Room</h1>
-      <p>This is the official public-facing media room for Gregory R. Smith for Congress and We The People Voice. Use it for press releases, candidate statements, campaign updates, tour announcements, community issue updates, media background, and approved contact information.</p>
-      <div class="hero-actions"><a class="btn gold" href="/contact.html">Request Interview</a><a class="btn light" href="/speech.html">Read The Speech</a><a class="btn" href="/community-issues.html">Community Issues</a><a class="btn light" href="/tour/index.html">Tour Schedule</a></div>
+      <p>The official public-facing media room for Gregory R. Smith for Congress and We The People Voice. The Maui boardwalk video stage is built for the campaign interview clip, press sharing, social media, and supporter updates.</p>
+      <div class="hero-actions"><a class="btn red" href="#maui-live">Watch Maui Segment</a><a class="btn" href="/contact.html">Request Interview</a><a class="btn light" href="/speech.html">Read The Speech</a><a class="btn light" href="/tour/index.html">Tour Schedule</a></div>
     </div>
   </section>
 
   <section class="section section-dark" id="maui-live">
     <div class="wrap">
-      <p class="eyebrow">Maui Live Feed · Outdoor News Interview Look</p>
-      <h2 class="section-title">News Coverage Setup</h2>
+      <p class="eyebrow">Maui Boardwalk · Organic News Interview Look</p>
+      <h2 class="section-title">Campaign Video Stage</h2>
       <div class="broadcast-wrap">
-        <div class="live-stage" aria-label="Maui outdoor newsroom mockup with live broadcast graphics">
+        <div class="video-stage" aria-label="Maui boardwalk campaign video stage with live broadcast graphics">
           <div class="live-badge"><span aria-hidden="true"></span>Live · Maui</div>
           <div class="station-bug">We The People News Desk</div>
+          <div class="video-shell">
+            <!-- Upload the finished MP4 to /assets/video/gregory-maui-boardwalk-interview.mp4 -->
+            <video controls playsinline preload="metadata" poster="/assets/images/maui-boardwalk-video-bg.svg">
+              <source src="/assets/video/gregory-maui-boardwalk-interview.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <div class="interview-lower">
             <div class="lower-text"><strong>Gregory R. Smith</strong><span>Write-In Candidate · We The People Voice</span></div>
             <div class="mic-card">Maui Interview Segment</div>
           </div>
         </div>
-        <aside class="broadcast-card">
+        <aside class="card">
           <h3>Producer Direction</h3>
-          <p>This section is built to make the campaign video feel like an organic local news segment: Maui in the background, simple lower-third graphics, and a reporter-style question flow instead of a stiff podium speech.</p>
+          <p>This section is ready for the finished MP4. The page uses the Maui boardwalk backdrop, local-news lower third, and a vertical interview frame so the campaign video can be dropped in without rebuilding the website.</p>
           <ul>
-            <li>Use a natural Maui beach, lanai, or ocean-view background.</li>
-            <li>Keep campaign branding small so the focus stays on Gregory.</li>
-            <li>Cut between Lori asking questions and Gregory answering.</li>
-            <li>Add captions and short B-roll shots for polish.</li>
+            <li>Final video filename: <strong>gregory-maui-boardwalk-interview.mp4</strong></li>
+            <li>Upload path: <strong>/assets/video/</strong></li>
+            <li>Current stage: website frame and backdrop are live-ready.</li>
           </ul>
           <div class="question-list" aria-label="Interview question prompts">
             <div><strong>Lori:</strong> Gregory, why are you running?</div>
@@ -68,25 +75,9 @@
   </section>
 
   <section class="section">
-    <div class="wrap">
-      <p class="eyebrow">Approved Visual Areas</p>
-      <h2 class="section-title">Campaign Pictures & Media Assets</h2>
-      <div class="visual-grid">
-        <article class="visual-card"><img src="/assets/images/the-peoples-voice.jpg" alt="The People’s Voice campaign poster" onerror="this.src='/assets/images/campaign-road.svg'"><div>The People’s Voice</div></article>
-        <article class="visual-card"><img src="/assets/images/peoples-endorsement.jpg" alt="The People’s Endorsement campaign poster" onerror="this.src='/assets/images/chicago-launch.svg'"><div>Endorsement Graphic</div></article>
-        <article class="visual-card"><img src="/assets/images/campaign-map.jpg" alt="Campaign tour map" onerror="this.src='/assets/images/campaign-road.svg'"><div>Tour / Map Graphic</div></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap news-grid">
-      <div class="release-list">
-        <article class="release-card"><time>Campaign Update</time><h2>Community Issue Dashboard Added</h2><p>The website now includes a public issue submission page designed to help organize community concerns into priority areas. The goal is to listen first, organize the facts, and bring clear issue priorities to colleagues, community leaders, and decision-makers.</p><a class="btn gold" href="/community-issues.html">Open Dashboard</a></article>
-        <article class="release-card"><time>Draft Release</time><h2>Gregory R. Smith Announces We The People Community Block Party Tour</h2><p>Gregory R. Smith is preparing a people-first listening tour designed to bring neighbors, workers, families, veterans, small business owners, local leaders, nonprofits, and community members into direct conversation about the issues affecting their area.</p><a class="btn gold" href="/tour/index.html">View Tour</a></article>
-        <article class="release-card"><time>Statement</time><h2>People Before Party. Service Before Status.</h2><p>“I don’t speak for you. I listen to you. You speak. We act.” This campaign is built around public trust, practical work, transparency, and the belief that leadership should answer to the people first.</p><a class="btn gold" href="/about.html">Meet Gregory</a></article>
-      </div>
-      <aside class="news-card"><h2>Media Contact</h2><p><strong>Gregory R. Smith for Congress</strong></p><p>Email: <a href="mailto:gregoryrsmithforcongress@gmail.com">gregoryrsmithforcongress@gmail.com</a></p><p>Phone: <a href="tel:+14012169452">+1 (401) 216-9452</a></p><p>Website: <a href="https://gregoryrsmithforcongress.wethepeoplesvoice.workers.dev">gregoryrsmithforcongress.wethepeoplesvoice.workers.dev</a></p><div class="notice"><strong>Media standard:</strong> Do not publish private contact details. Use only the campaign email and campaign phone listed here.</div></aside>
+    <div class="wrap release-grid">
+      <article class="card"><p class="eyebrow">Campaign Update</p><h2>Community Issue Dashboard Added</h2><p>The website includes a public issue submission page designed to help organize community concerns into priority areas. The goal is to listen first, organize the facts, and bring clear issue priorities to colleagues, community leaders, and decision-makers.</p><a class="btn" href="/community-issues.html">Open Dashboard</a></article>
+      <article class="card"><p class="eyebrow">Media Contact</p><h2>Campaign Newsroom</h2><p><strong>Gregory R. Smith for Congress</strong></p><p>Email: <a href="mailto:gregoryrsmithforcongress@gmail.com">gregoryrsmithforcongress@gmail.com</a><br />Phone: <a href="tel:+14012169452">+1 (401) 216-9452</a><br />Website: <a href="https://gregoryrsmithforcongress.wethepeoplesvoice.workers.dev">gregoryrsmithforcongress.wethepeoplesvoice.workers.dev</a></p><p class="small">Use only the public campaign email and campaign phone for media contact.</p></article>
     </div>
   </section>
 
@@ -112,8 +103,6 @@ Website: gregoryrsmithforcongress.wethepeoplesvoice.workers.dev
 ###</div>
     </div>
   </section>
-
-  <section class="section"><div class="wrap"><p class="eyebrow">Podium setup · Statements · Press workflow</p><h2 class="section-title">Campaign News Setup</h2><div class="media-tools"><article><h3>Interview Segments</h3><p>Use the Maui live setup for Lori-style questions, natural answers, candidate clips, and short local-news style updates.</p></article><article><h3>Press Releases</h3><p>Post every major announcement here first, then email local media with the newsroom link and contact information.</p></article><article><h3>Media Kit</h3><p>Add approved photos, logos, tour map, speech link, candidate bio, and public campaign contact details.</p></article></div></div></section>
 </main>
 <footer class="footer"><p><strong>Gregory R. Smith for Congress · We The People Voice</strong></p><p><a href="/speech.html">Campaign Speech</a> · <a href="/community-issues.html">Community Issues</a> · <a href="/tour/index.html">Tour &amp; Events</a> · <a href="/resources.html">Resources</a> · <a href="/endorsement.html">Endorse</a> · <a href="/contribution.html">Contribute</a> · <a href="/contact.html">Contact</a></p><p class="small">Draft dates, locations, artwork, and speech wording are not final unless specifically marked confirmed by the campaign.</p></footer>
 <script src="/js/main.js"></script>
