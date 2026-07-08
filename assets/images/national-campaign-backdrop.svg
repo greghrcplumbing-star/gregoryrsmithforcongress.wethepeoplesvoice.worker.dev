@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1050" role="img" aria-labelledby="title desc">
+  <title id="title">National campaign skyline with American flag</title>
+  <desc id="desc">A polished patriotic backdrop with a waving flag, civic buildings, city skyline, and stage lighting.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#061525"/>
+      <stop offset="0.45" stop-color="#0b3775"/>
+      <stop offset="1" stop-color="#071a35"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#b8872e"/>
+      <stop offset="0.5" stop-color="#ffe4a2"/>
+      <stop offset="1" stop-color="#c99739"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="35%" r="60%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="1800" height="1050" fill="url(#sky)"/>
+  <circle cx="1390" cy="180" r="390" fill="url(#spot)"/>
+  <circle cx="330" cy="210" r="320" fill="#d7ad4a" opacity="0.11"/>
+  <g opacity="0.34">
+    <path d="M0 340 C220 270 370 420 590 350 S930 270 1160 355 1560 405 1800 315 V0 H0Z" fill="#ffffff" opacity="0.05"/>
+    <path d="M0 430 C270 350 455 485 710 410 S1080 330 1360 430 1640 500 1800 405 V0 H0Z" fill="#d7ad4a" opacity="0.08"/>
+  </g>
+  <g transform="translate(1010 95)" filter="url(#shadow)">
+    <path d="M0 0 C120 45 235 -30 360 20 V305 C235 255 120 330 0 285Z" fill="#b82226"/>
+    <path d="M0 42 C120 87 235 12 360 62 V102 C235 52 120 127 0 82Z" fill="#fff8e7"/>
+    <path d="M0 124 C120 169 235 94 360 144 V184 C235 134 120 209 0 164Z" fill="#fff8e7"/>
+    <path d="M0 206 C120 251 235 176 360 226 V266 C235 216 120 291 0 246Z" fill="#fff8e7"/>
+    <path d="M0 0 C72 27 143 15 210 5 V152 C142 169 72 154 0 126Z" fill="#09234a"/>
+    <g fill="#fff8e7" opacity="0.94">
+      <circle cx="28" cy="30" r="5"/><circle cx="66" cy="43" r="5"/><circle cx="104" cy="48" r="5"/><circle cx="142" cy="43" r="5"/><circle cx="180" cy="34" r="5"/>
+      <circle cx="30" cy="70" r="5"/><circle cx="68" cy="82" r="5"/><circle cx="106" cy="86" r="5"/><circle cx="144" cy="82" r="5"/><circle cx="182" cy="72" r="5"/>
+      <circle cx="30" cy="110" r="5"/><circle cx="68" cy="122" r="5"/><circle cx="106" cy="126" r="5"/><circle cx="144" cy="122" r="5"/><circle cx="182" cy="112" r="5"/>
+    </g>
+  </g>
+  <g transform="translate(640 365)" filter="url(#shadow)">
+    <polygon points="260,0 520,118 0,118" fill="url(#gold)"/>
+    <rect x="42" y="118" width="436" height="56" fill="#f4d68d"/>
+    <rect x="72" y="174" width="60" height="315" fill="#fff0bf"/>
+    <rect x="172" y="174" width="60" height="315" fill="#fff0bf"/>
+    <rect x="272" y="174" width="60" height="315" fill="#fff0bf"/>
+    <rect x="372" y="174" width="60" height="315" fill="#fff0bf"/>
+    <rect x="0" y="489" width="520" height="56" fill="url(#gold)"/>
+    <rect x="-35" y="545" width="590" height="50" fill="#9c6f25"/>
+  </g>
+  <g opacity="0.94" filter="url(#shadow)">
+    <rect x="0" y="690" width="1800" height="360" fill="#05101f"/>
+    <rect x="55" y="575" width="95" height="475" fill="#09234a"/>
+    <rect x="185" y="625" width="125" height="425" fill="#0b3775"/>
+    <rect x="345" y="540" width="105" height="510" fill="#09234a"/>
+    <rect x="500" y="650" width="118" height="400" fill="#071a35"/>
+    <rect x="1230" y="600" width="120" height="450" fill="#09234a"/>
+    <rect x="1380" y="545" width="110" height="505" fill="#0b3775"/>
+    <rect x="1525" y="635" width="130" height="415" fill="#09234a"/>
+    <rect x="1680" y="585" width="100" height="465" fill="#071a35"/>
+  </g>
+  <g fill="#ffe4a2" opacity="0.36">
+    <rect x="77" y="604" width="12" height="22"/><rect x="114" y="604" width="12" height="22"/><rect x="207" y="659" width="14" height="24"/><rect x="255" y="659" width="14" height="24"/>
+    <rect x="370" y="575" width="12" height="22"/><rect x="410" y="575" width="12" height="22"/><rect x="525" y="682" width="14" height="24"/><rect x="572" y="682" width="14" height="24"/>
+    <rect x="1260" y="632" width="14" height="24"/><rect x="1308" y="632" width="14" height="24"/><rect x="1410" y="578" width="12" height="22"/><rect x="1452" y="578" width="12" height="22"/>
+    <rect x="1555" y="665" width="14" height="24"/><rect x="1610" y="665" width="14" height="24"/><rect x="1705" y="620" width="12" height="22"/><rect x="1748" y="620" width="12" height="22"/>
+  </g>
+  <rect y="815" width="1800" height="235" fill="url(#sky)" opacity="0.64"/>
+</svg>
