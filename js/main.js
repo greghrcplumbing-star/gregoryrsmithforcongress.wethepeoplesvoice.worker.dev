@@ -48,14 +48,6 @@
 
   replaceText(document.body);
 
-  document.querySelectorAll('a[href="/contribution.html"]').forEach((a) => {
-    a.href = '/endorsement.html';
-    a.textContent = a.textContent.replace(/Donate Today|Donate|Contribution|Contribute/g, 'Endorse');
-  });
-
-  document.querySelectorAll('img[src="/assets/images/the-peoples-voice.jpg"]').forEach((img) => { img.src = '/assets/images/the-peoples-voice.svg'; });
-  document.querySelectorAll('img[src="/assets/images/peoples-endorsement.jpg"]').forEach((img) => { img.src = '/assets/images/peoples-endorsement.svg'; });
-
   if (nav) {
     const items = [
       { href: '/index.html', label: 'Home', match: ['/', '/index.html'] },
