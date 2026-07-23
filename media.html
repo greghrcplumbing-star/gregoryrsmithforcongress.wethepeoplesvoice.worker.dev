@@ -24,17 +24,267 @@
     <nav class="menu" aria-label="Primary navigation"><a href="/index.html">Home</a><a href="/about.html">Meet Gregory</a><a href="/priorities.html">Platform</a><a href="/community-issues.html">Community Issues</a><a href="/resources.html">Resources</a><a href="/contact.html">Contact</a></nav>
   </div>
 </header>
-<main>
-  <section class="news-hero">
-    <div class="wrap news-hero-panel">
-      <p class="eyebrow">Campaign Media Center</p>
-      <h1>Media Center</h1>
-      <p>The official campaign media hub for Gregory R. Smith for Congress. Watch interviews, campaign updates, and community conversations directly from our YouTube channel.</p>
-      <div class="hero-actions"><a class="btn red" href="#featured-videos">Watch Videos</a><a class="btn" href="/contact.html">Request Interview</a><a class="btn light" href="/speech.html">Read The Speech</a></div>
-    </div>
-  </section>
+<main>  
+  <section class="news-hero" id="pvn-network">
+  <style>
+    .pvn-wrap {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
 
-  <!-- Featured Videos Section -->
+    .pvn-stage {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-top: 28px;
+    }
+
+    .pvn-tv {
+      border: 3px solid rgba(215,173,74,.75);
+      border-radius: 24px;
+      background: #030812;
+      box-shadow: 0 28px 80px rgba(0,0,0,.48);
+      overflow: hidden;
+    }
+
+    .pvn-tv-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      background: linear-gradient(90deg,#061525,#09234a,#061525);
+      border-bottom: 2px solid rgba(215,173,74,.55);
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .pvn-live {
+      color: #fff;
+      background: #b82226;
+      border-radius: 999px;
+      padding: 6px 10px;
+      box-shadow: 0 0 18px rgba(184,34,38,.65);
+    }
+
+    .pvn-screen {
+      min-height: 390px;
+      display: grid;
+      place-items: end start;
+      padding: 30px;
+      background:
+        linear-gradient(120deg,rgba(3,8,18,.12),rgba(3,8,18,.92)),
+        url('/assets/images/maui-boardwalk-video-bg.svg') center/cover no-repeat;
+    }
+
+    .pvn-play {
+      width: 70px;
+      height: 70px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg,#8f1117,#d7ad4a);
+      color: #fff8e7;
+      font-size: 28px;
+      box-shadow: 0 18px 48px rgba(0,0,0,.45);
+      margin-bottom: 18px;
+    }
+
+    .pvn-screen h1 {
+      margin: 0 0 10px;
+      color: #ffe4a2;
+      font-size: clamp(30px,4.5vw,54px);
+      line-height: 1.02;
+      text-transform: uppercase;
+    }
+
+    .pvn-screen p {
+      max-width: 760px;
+      margin: 0;
+      color: rgba(255,248,231,.92);
+      font-size: 17px;
+      line-height: 1.55;
+    }
+
+    .pvn-panel {
+      border: 2px solid rgba(215,173,74,.55);
+      border-radius: 24px;
+      background: linear-gradient(145deg,rgba(6,21,37,.92),rgba(9,35,74,.72));
+      box-shadow: 0 28px 80px rgba(0,0,0,.38);
+      padding: 20px;
+    }
+
+    .pvn-panel h2 {
+      margin: 0 0 8px;
+      color: #ffe4a2;
+      font-size: 26px;
+      text-transform: uppercase;
+    }
+
+    .pvn-panel p {
+      margin: 0 0 16px;
+      color: rgba(255,248,231,.86);
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .pvn-channel {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 13px 14px;
+      border-radius: 15px;
+      border: 1px solid rgba(215,173,74,.42);
+      background: rgba(255,255,255,.055);
+      color: #fff8e7;
+      text-align: left;
+      font-weight: 800;
+    }
+
+    .pvn-channel small {
+      display: block;
+      margin-top: 4px;
+      opacity: .78;
+      font-weight: 500;
+      line-height: 1.35;
+    }
+
+    .pvn-channel.active {
+      background: rgba(215,173,74,.18);
+      border-color: #d7ad4a;
+    }
+
+    .pvn-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .pvn-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 900;
+      background: linear-gradient(135deg,#8b6418,#d7ad4a);
+      color: #101010;
+    }
+
+    .pvn-btn.red {
+      color: #fff;
+      background: linear-gradient(135deg,#8f1117,#d33037);
+    }
+
+    .pvn-marquee {
+      margin-top: 22px;
+      padding: 12px 16px;
+      border: 1px solid rgba(215,173,74,.45);
+      border-radius: 16px;
+      background: rgba(6,21,37,.72);
+      color: #ffe4a2;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    @media(max-width:900px) {
+      .pvn-stage {
+        grid-template-columns: 1fr;
+      }
+
+      .pvn-screen {
+        min-height: 340px;
+      }
+    }
+
+    @media(max-width:640px) {
+      .pvn-wrap {
+        width: calc(100% - 16px);
+      }
+
+      .pvn-screen {
+        padding: 22px;
+      }
+
+      .pvn-actions a {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <div class="pvn-wrap">
+    <p class="eyebrow">The People’s Voice Network</p>
+    <h1 class="section-title">Media Center</h1>
+    <p>
+      Welcome to the public newsroom for We The People’s Voice — real stories,
+      real people, video updates, testimony, podcast clips, and community reports.
+    </p>
+
+    <div class="pvn-stage">
+      <div class="pvn-tv">
+        <div class="pvn-tv-top">
+          <span>PVN Channel 7</span>
+          <span class="pvn-live">On Air</span>
+        </div>
+
+        <div class="pvn-screen">
+          <div>
+            <div class="pvn-play">▶</div>
+            <h1>Listening Not Speaking</h1>
+            <p>
+              Krazy Uncle Keleko opens the line, checks the coconut weather,
+              and lets the people say what is really broken.
+            </p>
+
+            <div class="pvn-actions">
+              <a class="pvn-btn red" href="tel:+14012169452">Call or Text Your Story</a>
+              <a class="pvn-btn" href="#featured-videos">Watch Videos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="pvn-panel">
+        <h2>Channel Guide</h2>
+        <p>Pick a lane. Each channel can become its own YouTube playlist later.</p>
+
+        <button class="pvn-channel active">
+          Channel 7 · Listening Not Speaking
+          <small>Podcast, monologues, coconut weather, and real talk.</small>
+        </button>
+
+        <button class="pvn-channel">
+          Channel 2 · People’s Testimonies
+          <small>Short stories from real people, shared only with consent.</small>
+        </button>
+
+        <button class="pvn-channel">
+          Channel 5 · Community Reports
+          <small>City reports, issue breakdowns, and what people want fixed.</small>
+        </button>
+
+        <button class="pvn-channel">
+          Channel 13 · Español
+          <small>Future Spanish-language community updates and testimony.</small>
+        </button>
+
+        <button class="pvn-channel">
+          Channel 101 · Learning Center
+          <small>Future classes, resources, civic education, and training.</small>
+        </button>
+      </aside>
+    </div>
+
+    <div class="pvn-marquee">
+      You speak. We listen. We organize. We act.
+    </div>
+  </div>
+</section>
+ <!-- Featured Videos Section -->
   <section class="section section-dark" id="featured-videos">
     <div class="wrap">
       <p class="eyebrow">Campaign Video Gallery</p>
